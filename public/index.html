@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Music App</title>
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Tutorial</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo">
+            <img src="/images/logo.png" alt="Logo">
         </div>
         <nav>
             <ul>
@@ -21,16 +23,32 @@
             </ul>
         </nav>
     </header>
-    <h1>Music for everyone</h1>
 
-    <div class="instruments">
-        <div class="ins-pad" data-key="65">
-            <span>piano</span>
+    <section class="hero">
+        <h1>Welcome to Music Tutorial</h1>
+        <p>Learn to play your favorite instrument online</p>
+        <a href="#" class="cta-btn">Get Started</a>
+    </section>
+
+    <section class="featured-instruments">
+        <h2>Featured Instruments</h2>
+        <div class="instrument-card">
+            <img src="/images/Guitar.jpeg" alt="Guitar">
+            <h3>Guitar</h3>
+            <p>Learn to play the guitar with our comprehensive lessons.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
         </div>
-      
-    </div>
+        <div class="instrument-card">
+            <img src="/images/piano.jpg" alt="Piano">
+            <h3>Piano</h3>
+            <p>Master the piano and impress your friends and family.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
+    </section>
 
-    <script src="/js/script.js"></script>
+    <footer>
+        <p>&copy; 2023 Music Tutorial. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
