@@ -1,3 +1,22 @@
+#navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#navbar__menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 60%;
+  gap: 10em;
+  list-style: none;
+  font-size: 14px;
+}
+#navbar__menu a {
+  color: #FEFEFB;
+  text-decoration: none;
+}
+
 body {
   background: rgb(4, 0, 66);
   background: radial-gradient(circle, rgb(4, 0, 66) 0%, rgb(2, 0, 36) 100%);
