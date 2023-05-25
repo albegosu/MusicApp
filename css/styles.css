@@ -15,6 +15,7 @@ header {
   background-color: #333;
   padding: 20px;
 }
+
 /*logo styles */
 .logo img {
   width: 50px;
@@ -107,12 +108,14 @@ nav ul li a {
 
 /* Footer styles */
 footer {
-  background-color: #333;
+  background-color: #020021;
   padding: 20px;
   text-align: center;
+  color: #fff;
 }
 
-footer p {
+footer #copyright {
   color: #fff;
   font-size: 14px;
+  margin-top: 12px;
 }
