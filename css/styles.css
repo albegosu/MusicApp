@@ -1,132 +1,17 @@
-/* styles.css */
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li {
-  margin: 0;
-  padding: 0;
+body {
+  background: rgb(4, 0, 66);
+  background: radial-gradient(circle, rgb(4, 0, 66) 0%, rgb(2, 0, 36) 100%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: grey;
+  padding: 0.5rem;
 }
-
-/* Header styles */
-header {
-  background-color: #333;
-  padding: 20px;
-}
-
-/*logo styles */
-.logo img {
-  width: 50px;
-  height: 50px;
-}
-
-nav ul {
-  list-style: none;
+body .intro {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 0 3rem;
 }
 
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* Hero section styles */
-.hero {
-  background-color: #f1f1f1;
-  padding: 50px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.cta-btn {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 5px;
-}
-
-/* Featured instruments section styles */
-.featured-instruments {
-  padding: 50px;
-  text-align: center;
-}
-
-.featured-instruments h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-
-.instrument-card {
-  margin-bottom: 30px;
-}
-
-.instrument-card img {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 20px;
-}
-
-.instrument-card h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.instrument-card p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.learn-more-btn {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 8px 16px;
-  text-decoration: none;
-  font-size: 14px;
-  border-radius: 5px;
-}
-
-/* Footer styles */
-footer {
-
-  background-color: #020021;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-}
-
-footer #copyright {
-  color: #fff;
-  font-size: 14px;
-  margin-top: 12px;
-}
-
-  background-color: #333;
-  padding: 20px;
-  text-align: center;
-}
-
-footer p {
-  color: #fff;
-  font-size: 14px;
-}
+/*# sourceMappingURL=styles.css.map */
