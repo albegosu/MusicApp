@@ -108,6 +108,7 @@ nav ul li a {
 
 /* Footer styles */
 footer {
+
   background-color: #020021;
   padding: 20px;
   text-align: center;
@@ -118,4 +119,14 @@ footer #copyright {
   color: #fff;
   font-size: 14px;
   margin-top: 12px;
+}
+
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  font-size: 14px;
 }
