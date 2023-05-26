@@ -1,0 +1,26 @@
+@import 'intro';
+@import 'variables';
+
+@mixin centerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.premium__tab {
+    @include centerContent();
+    margin-top: 2rem;
+}
+#premium__h2 {
+    color: $colorWhite;
+    margin: 0;
+    }
+#premium__btn{
+    @include hitBtn();
+    margin: 0;
+}
+a {
+    color: $colorWhite;
+    text-decoration: none;
+} 
+
