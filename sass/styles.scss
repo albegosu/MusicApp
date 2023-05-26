@@ -68,7 +68,6 @@ body {
           font-weight: 400;
         }
         #intro__btn {
-          @include hitBtn();
           a {
             color: $colorWhite;
             text-decoration: none;
