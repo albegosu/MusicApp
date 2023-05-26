@@ -12,9 +12,17 @@
 @mixin dflexContent {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 0 3rem;
-}  
+}
+
+@mixin hitBtn {
+  background-color: $colorLightGreen;
+  width: 9rem;
+  padding: 1rem;
+  margin: 0;
+  border: none;
+  border-radius: 4rem;
+}
 
 body {
     background: rgb(4,0,66);
@@ -22,5 +30,30 @@ body {
     @include fontFamily(); 
     .intro {
       @include dflexContent();
+      .intro__left {
+        max-width: 20rem;
+        padding: 2rem;
+        #intro__h1{
+          color: $colorWhite;
+          font-weight: 600;
+          font-size: 3rem;
+          margin: 1rem 0;
+        }
+        #intro__p {
+          font-size: 0.8rem;
+          font-weight: 400;
+        }
+        #intro__btn {
+          @include hitBtn();
+          a {
+            color: $colorWhite;
+            text-decoration: none;
+          } 
+        }
+      }
+      #intro__img {
+        flex: 1 60%;
+        max-width: 40rem;
+      }
     }
 }
