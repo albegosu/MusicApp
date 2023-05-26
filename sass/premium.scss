@@ -1,2 +1,7 @@
-@use "premium";
 @import "variables";
+
+@mixin body($color, $height, $width) {
+  background-color: $color;
+  height: 10rem;
+  width: 10rem;
+}

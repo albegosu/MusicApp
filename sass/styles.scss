@@ -1,25 +1,25 @@
-@use 'sections';
-@import 'variables';
+@use "sections";
+@use "premium";
+@import "variables";
 
 @mixin fontFamily {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: grey;
-    padding: 0.5rem;
-  }
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: grey;
+  padding: 0.5rem;
+}
 
 @mixin dflexContent {
   display: flex;
   justify-content: center;
   margin: 0 3rem;
-} 
+}
 
 @mixin flxlogo {
   display: flex;
   justify-content: space-evenly;
 }
-
 
 @mixin navbar {
   display: flex;
@@ -29,54 +29,53 @@
   gap: 3em;
   list-style: none;
   font-size: 14px;
-  
- 
 }
 
 #navbar {
- @include flxlogo()
+  @include flxlogo();
 }
-
 
 #navbar__menu {
   @include navbar();
- a{
-  color: $colorWhite;
-  text-decoration: none;
- }
-  
-  
+  a {
+    color: $colorWhite;
+    text-decoration: none;
+  }
 }
 
 body {
-    background: rgb(4,0,66);
-    background: radial-gradient(circle, rgba(4,0,66,1) 0%, rgba(2,0,36,1) 100%);   
-    @include fontFamily(); 
-    .intro {
-      @include dflexContent();
-      .intro__left {
-        max-width: 20rem;
-        padding: 2rem;
-        #intro__h1{
-          color: $colorWhite;
-          font-weight: 600;
-          font-size: 3rem;
-          margin: 1rem 0;
-        }
-        #intro__p {
-          font-size: 0.8rem;
-          font-weight: 400;
-        }
-        #intro__btn {
-          a {
-            color: $colorWhite;
-            text-decoration: none;
-          } 
-        }
+  background: rgb(4, 0, 66);
+  background: radial-gradient(
+    circle,
+    rgba(4, 0, 66, 1) 0%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  @include fontFamily();
+  .intro {
+    @include dflexContent();
+    .intro__left {
+      max-width: 20rem;
+      padding: 2rem;
+      #intro__h1 {
+        color: $colorWhite;
+        font-weight: 600;
+        font-size: 3rem;
+        margin: 1rem 0;
       }
-      #intro__img {
-        flex: 1 60%;
-        max-width: 40rem;
+      #intro__p {
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
+      #intro__btn {
+        a {
+          color: $colorWhite;
+          text-decoration: none;
+        }
       }
     }
+    #intro__img {
+      flex: 1 60%;
+      max-width: 40rem;
+    }
+  }
 }
