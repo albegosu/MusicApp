@@ -1,0 +1,39 @@
+@mixin fontFamily {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: grey;
+    padding: 0.5rem;
+  }
+
+@mixin dflexContent {
+  display: flex;
+  justify-content: center;
+  margin: 0 3rem;
+} 
+
+
+@mixin navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 60%;
+  gap: 3em;
+  list-style: none;
+  font-size: 14px;
+}
+@mixin flxlogo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+   @mixin btn_green{
+    background-color: $colorDarkGreen;
+    color: $colorWhite;
+    width: 10em;
+    height: 3em;
+    border-radius: 20px;
+    color: $colorWhite;
+    text-decoration: none;
+   }
+  
+   
