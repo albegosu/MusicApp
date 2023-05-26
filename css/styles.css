@@ -29,8 +29,29 @@ body {
 body .intro {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 0 3rem;
+}
+body .intro .intro__left {
+  max-width: 20rem;
+  padding: 2rem;
+}
+body .intro .intro__left #intro__h1 {
+  color: #FEFEFB;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+body .intro .intro__left #intro__p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+body .intro .intro__left #intro__btn a {
+  color: #FEFEFB;
+  text-decoration: none;
+}
+body .intro #intro__img {
+  flex: 1 60%;
+  max-width: 40rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
