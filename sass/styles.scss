@@ -21,7 +21,7 @@
   justify-content: space-evenly;
 }
 
-@mixin navbar {
+/*@mixin navbar {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -29,19 +29,19 @@
   gap: 3em;
   list-style: none;
   font-size: 14px;
-}
+}*/
 
 #navbar {
   @include flxlogo();
 }
 
-#navbar__menu {
+/*#navbar__menu {
   @include navbar();
   a {
     color: $colorWhite;
     text-decoration: none;
   }
-}
+}*/
 
 body {
   background: rgb(4, 0, 66);
