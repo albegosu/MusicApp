@@ -1,37 +1,8 @@
 @use 'sections';
 @import 'variables';
-
-@mixin fontFamily {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: grey;
-    padding: 0.5rem;
-  }
-
-@mixin dflexContent {
-  display: flex;
-  justify-content: center;
-  margin: 0 3rem;
-} 
-
-@mixin flxlogo {
-  display: flex;
-  justify-content: space-evenly;
-}
+@import "mixings";
 
 
-@mixin navbar {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  width: 60%;
-  gap: 3em;
-  list-style: none;
-  font-size: 14px;
-  
- 
-}
 
 #navbar {
  @include flxlogo()
