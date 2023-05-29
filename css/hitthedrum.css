@@ -199,4 +199,107 @@ body {
   text-decoration: none;
 }
 
+
+
+
+
+
 /*# sourceMappingURL=hitthedrum.css.map */
+@media screen and (max-width: 1600px) {
+  .img_container{
+    padding-right: 200px;
+    
+    transform: translateX(-100px);
+  }
+  .pad-container{
+    transform: translateX(-100px);
+  }
+  .footer_buttons{
+    padding-right: 300px;
+    padding-left: 300px;
+    transform: translateX(100px);
+    gap: 300px;
+  } 
+  
+}
+
+@media screen and (max-width: 1400px) {
+  .img_container{
+    padding-right: 500px;
+    transform: translateX(-200px);
+  }
+  .pad-container{
+    transform: translateX(-200px);
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  
+  .footer_buttons{
+    padding-right: 300px;
+    padding-left: 100px;
+    transform: translateX(200px);
+    gap: 200px;
+  } 
+}
+
+@media screen and (max-width: 1000px) {
+
+  .img_container{
+    transform: translateX(-220px); 
+  }
+  .pad-container{
+    transform: translateX(-220px);
+  }
+  
+  
+  .footer_buttons{
+    padding-right: 300px;
+    padding-left: 100px;
+    transform: translateX(350px);
+    gap: 200px;
+  } 
+  
+  
+}
+
+
+@media screen and (max-width: 768px){
+
+  
+  .img_container{
+    transform: translateX(-300px);
+    padding-right: 200px;
+    margin-right: 200px;
+  }
+  .pad-container{
+    transform: translateX(-300px);  
+  }
+  .footer_buttons{
+    padding-right: 300px;
+    padding-left: 400px;
+    transform: translateX(200px);
+    gap: 200px;
+  } 
+  
+}
+
+@media screen and (max-width: 300px){
+
+  
+  .img_container{
+    width: max-content;
+  }
+  .pad-container{
+    padding-right: 300px;
+    margin-right: 300px;
+  }
+  .footer_buttons{
+    padding-right: 300px;
+    padding-left: 300px;
+    transform: translateX(200px);
+  } 
+  
+}
+
