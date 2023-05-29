@@ -32,14 +32,6 @@
   color: #FEFEFB;
   text-decoration: none;
 }
-.intro .intro__left #intro__btn a:hover {
-  color: #00F482;
-  letter-spacing: 0.3rem;
-  background-color: white;
-}
-.intro .intro__left #intro__btn #intro__btn:hover {
-  background-color: white;
-}
 .intro #intro__img {
   flex: 1 60%;
   max-width: 30rem;
@@ -78,14 +70,6 @@
 .intro .intro__left #intro__btn a {
   color: #FEFEFB;
   text-decoration: none;
-}
-.intro .intro__left #intro__btn a:hover {
-  color: #00F482;
-  letter-spacing: 0.3rem;
-  background-color: white;
-}
-.intro .intro__left #intro__btn #intro__btn:hover {
-  background-color: white;
 }
 .intro #intro__img {
   flex: 1 60%;
@@ -320,6 +304,12 @@ body {
   border-radius: 20px;
   color: #FEFEFB;
   text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__menu, #copyright {
