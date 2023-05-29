@@ -1,7 +1,7 @@
 .intro {
   display: flex;
   justify-content: center;
-  margin: 3rem;
+  margin: 3rem 3rem;
 }
 .intro .intro__left {
   max-width: 20rem;
@@ -33,6 +33,71 @@
 .intro #intro__img {
   flex: 1 60%;
   max-width: 30rem;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 3rem;
+}
+.intro .intro__left {
+  max-width: 20rem;
+  padding: 2rem;
+}
+.intro .intro__left #intro__h1 {
+  color: #FEFEFB;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.intro .intro__left #intro__p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.intro .intro__left #intro__btn {
+  background-color: #00F482;
+  width: 9rem;
+  padding: 0.5rem;
+  margin: 0;
+  border: none;
+  border-radius: 4rem;
+  margin-top: 3rem;
+}
+.intro .intro__left #intro__btn a {
+  color: #FEFEFB;
+  text-decoration: none;
+}
+.intro #intro__img {
+  flex: 1 60%;
+  max-width: 30rem;
+}
+
+.premium__tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#premium__h2 {
+  color: #FEFEFB;
+  margin: 0;
+}
+
+#premium__btn {
+  background-color: #00F482;
+  width: 9rem;
+  padding: 0.5rem;
+  margin: 0;
+  border: none;
+  border-radius: 4rem;
+  margin-top: 3rem;
+  margin: 0;
+}
+
+a {
+  color: #FEFEFB;
+  text-decoration: none;
 }
 
 #navbar {
@@ -133,7 +198,6 @@ body {
   color: grey;
   padding: 0.5rem;
 }
-<<<<<<< HEAD
 body .intro {
   display: flex;
   justify-content: center;
@@ -161,7 +225,5 @@ body .intro #intro__img {
   flex: 1 60%;
   max-width: 40rem;
 }
-=======
->>>>>>> 707b920bc8a4acb2b9340d025548c27f09bd6fc7
 
 /*# sourceMappingURL=styles.css.map */

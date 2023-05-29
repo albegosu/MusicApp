@@ -1,5 +1,7 @@
 @use 'sections';
 @import 'variables';
+@import 'intro';
+@import 'divPremium';
 
 @mixin fontFamily {
   font-family: "Montserrat", sans-serif;
