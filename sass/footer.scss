@@ -1,0 +1,7 @@
+@import 'mixings';
+
+.footer__menu, #copyright {
+    @include dflexContent();
+    margin: 0 0;
+    gap: 2rem;
+}

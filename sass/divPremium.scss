@@ -1,15 +1,10 @@
 @import 'intro';
 @import 'variables';
+@import 'mixings';
 
-@mixin centerContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.premium__tab {
+.premium {
     @include centerContent();
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 #premium__h2 {
     color: $colorWhite;

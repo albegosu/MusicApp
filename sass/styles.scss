@@ -1,52 +1,23 @@
-@use 'sections';
 @import 'variables';
+@import 'mixings';
 @import 'intro';
 @import 'divPremium';
-
-@mixin fontFamily {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: grey;
-  padding: 0.5rem;
-}
-
-@mixin dflexContent {
-  display: flex;
-  justify-content: center;
-  margin: 0 3rem;
-} 
-
-@mixin flxlogo {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-/*@mixin navbar {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  width: 60%;
-  gap: 3em;
-  list-style: none;
-  font-size: 14px;
-}*/
+@import 'hitthedrum';
+@import 'footer';
 
 #navbar {
   @include flxlogo();
 }
-
-
 #navbar__menu {
   @include navbar();
- a{
+  a{
   color: $colorWhite;
   text-decoration: none;
- }
-  
-  
+  }
+  a:hover {
+    color: $colorLightGreen;
+  } 
 }
-
 body {
     background: rgb(4,0,66);
     background: radial-gradient(circle, rgba(4,0,66,1) 0%, rgba(2,0,36,1) 100%);   
