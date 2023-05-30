@@ -23,31 +23,7 @@ body {
     background: rgb(4,0,66);
     background: radial-gradient(circle, rgba(4,0,66,1) 0%, rgba(2,0,36,1) 100%);   
     @include fontFamily(); 
-    .intro {
-      @include dflexContent();
-      .intro__left {
-        max-width: 20rem;
-        padding: 2rem;
-        #intro__h1{
-          color: $colorWhite;
-          font-weight: 600;
-          font-size: 3rem;
-          margin: 1rem 0;
-        }
-        #intro__p {
-          font-size: 0.8rem;
-          font-weight: 400;
-        }
-        #intro__btn {
-          a {
-            color: $colorWhite;
-            text-decoration: none;
-          } 
-        }
-      }
-      #intro__img {
-        flex: 1 60%;
-        max-width: 40rem;
-      }
+    .h1Obras {
+      color: $colorLightGreen;
     }
 }
