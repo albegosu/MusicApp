@@ -7,11 +7,13 @@
   color: grey;
   padding: 0.5rem;
 }
+
 @mixin dflexContent {
   display: flex;
   justify-content: center;
   margin: 0 3rem;
 } 
+
 @mixin navbar {
   display: flex;
   justify-content: flex-end;
@@ -21,11 +23,13 @@
   list-style: none;
   font-size: 14px;
 }
+
 @mixin flxlogo {
   display: flex;
   justify-content: space-evenly;
 }
-  @mixin btn_green{
+
+@mixin btn_green{
   background-color: $colorDarkGreen;
   color: $colorWhite;
   width: 10em;
@@ -33,17 +37,20 @@
   border-radius: 20px;
   color: $colorWhite;
   text-decoration: none;
-  }
-  @mixin centerContent {
+}
+
+@mixin centerContent {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 @mixin dflexContent {
   display: flex;
   justify-content: center;
   margin: 3rem 3rem;
 } 
+
 @mixin hitBtn {
   background-color: $colorLightGreen;
   color: $colorWhite;
@@ -54,6 +61,7 @@
   border-radius: 4rem;
   margin-top: 3rem;
 }
+
 @mixin navbar {
   display: flex;
   justify-content: flex-end;
@@ -63,10 +71,12 @@
   list-style: none;
   font-size: 14px;
 }
+
 @mixin navbarPremium {
   color: $colorLightGreen;
   font-weight: 800;
 }
+
 @mixin premium-section {
   font-size: 2rem;
   font-weight: 800;
@@ -76,6 +86,7 @@
   height: 100%;
   margin: 0 auto;
 }
+
 @mixin hitcircle {
   width: 400px;
   height: 400px;
@@ -91,9 +102,11 @@
   font-weight: 900;
   color: #303030;
 }
+
 @mixin DOMBOOM {
   color: $colorLightGreen;
 }
+
 @mixin button {
   background-color: $colorLightGreen;
   color: $colorWhite;
@@ -105,6 +118,7 @@
   display: block;
   margin: 0 auto;
 }
+
 @mixin fontFamily {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
@@ -112,6 +126,7 @@
   color: grey;
   padding: 0.5rem;
 }
+
 @mixin dflexContent {
   display: flex;
   justify-content: center;
