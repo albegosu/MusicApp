@@ -252,9 +252,7 @@ body {
     padding-right: 100px;
     margin-right: 100px;
   }
-  .pad-container{
-    transform: translateX(-300px);  
-  }
+  
   .logo {
     width: 400px;
   }
@@ -295,9 +293,7 @@ body {
     padding-right: 200px;
     margin-right: 200px;
   }
-  .pad-container{
-    transform: translateX(-300px);  
-  }
+  
   .footer_buttons{
     padding-right: 300px;
     padding-left: 400px;
@@ -313,10 +309,7 @@ body {
   .img_container{
     width: max-content;
   }
-  .pad-container{
-    padding-right: 300px;
-    margin-right: 300px;
-  }
+  
   .footer_buttons{
     padding-right: 300px;
     padding-left: 300px;
