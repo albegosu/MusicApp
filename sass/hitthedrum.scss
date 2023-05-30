@@ -4,19 +4,14 @@
 body{
     background-color: $colorbgdarkblue;
 }
-
 #navbar { 
-    padding: 50px 200px;
+    padding: 0 200px;
 }
-
 .img_container{
     position: relative;
     padding: 0 0 0 300px;
-    width: 70%;
-    
+    width: 70%;  
 }
-
-
 .pad-container{
     position: absolute;
     top: 170px;
@@ -169,8 +164,7 @@ cursor: pointer;
     .switch_button, a{
         @include btn_green
     }   
- 
-    }
+}
     
 
 

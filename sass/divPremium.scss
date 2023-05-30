@@ -1,0 +1,21 @@
+@import 'intro';
+@import 'variables';
+@import 'mixings';
+
+.premium {
+    @include centerContent();
+    margin: 2rem 0;
+}
+#premium__h2 {
+    color: $colorWhite;
+    margin: 0;
+    }
+#premium__btn{
+    @include hitBtn();
+    margin: 0;
+}
+a {
+    color: $colorWhite;
+    text-decoration: none;
+} 
+

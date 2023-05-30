@@ -1,0 +1,31 @@
+@import 'mixings';
+
+.intro {
+@include dflexContent();
+padding: 3rem 0;
+.intro__left {
+    max-width: 20rem;
+    padding: 2rem;
+    #intro__h1{
+    color: $colorWhite;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 1rem 0;
+    }
+    #intro__p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    }
+    #intro__btn {
+    @include hitBtn();
+        a {
+            color: $colorWhite;
+            text-decoration: none;
+        }  
+    }
+}
+#intro__img {
+    flex: 1 60%;
+    max-width: 30rem;
+}
+}
