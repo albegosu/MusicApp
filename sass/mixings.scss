@@ -132,7 +132,14 @@
   justify-content: center;
   margin: 0 3rem;
 } 
+
 @mixin flxlogo {
   display: flex;
   justify-content: space-evenly;
+}
+
+@mixin textTittle {
+  color: $colorLightGreen;
+  font-size: 5rem;
+  font-weight: 800;
 }

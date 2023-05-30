@@ -312,6 +312,27 @@ main {
   align-items: center;
 }
 
+#img__piano {
+  max-width: 70%;
+  margin: 0 0 4rem 0;
+}
+
+#container__text {
+  filter: url(#threshold) blur(0.2px);
+  margin: 4rem 0 0 0;
+}
+
+#container__text1,
+#container__text2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  font-size: 6rem;
+  text-align: center;
+  user-select: none;
+  color: #00B365;
+}
+
 .footer {
   position: absolute;
   bottom: 1rem;
