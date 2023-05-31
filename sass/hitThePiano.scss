@@ -28,3 +28,28 @@
     user-select: none;
     color: $colorDarkGreen;
 }
+#bottom__navigation {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#bottom__navigation--switch {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#bottom__navigation--switch button {
+    width: 4rem;
+    background-color: $colorLightGreen;
+    color: $colorWhite;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    border-style: none;
+}
+
+#bottom__navigation--switch img {
+    max-width: 8rem;
+}
+
