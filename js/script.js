@@ -31,8 +31,6 @@ function preloadKeyboard(){
     la2 = loadSound('/resources/keyboardSounds/la2.ogg');
     si1 = loadSound('/resources/keyboardSounds/si.ogg');
     si2 = loadSound('/resources/keyboardSounds/si2.ogg');
-
-
 }
 
 /*function keyPressed() {
