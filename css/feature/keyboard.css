@@ -1,4 +1,4 @@
-html{
+/*html{
     background-color: blue;
     padding: 0;
     margin: 0 auto;
@@ -34,7 +34,6 @@ html{
     height: 30vh;  
     border-bottom-left-radius: 3px; 
     border-bottom-right-radius: 3px; 
-    /*border-left: 1px solid #00b365;*/
     border: 1px solid #00b365;
     border-top: none;
 }
@@ -64,4 +63,68 @@ html{
 .blackKey:active{
     box-shadow: -1px -1px 2px hsla(0, 0%, 100%, 0.2);
 }
+
+*/
+#teclas {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.whiteKey {
+    width: 50px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.blackKey {
+    width: 30px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    top: -100px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #piano {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .whiteKey {
+        width: 50px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    
+    .blackKey {
+        width: 30px;
+        height: 100px;
+        top: -50px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whiteKey {
+        width: 30px;
+        height: 100px;
+    }
+    
+    .blackKey {
+        width: 20px;
+        height: 60px;
+        top: -30px;
+    }
+}
+
 
