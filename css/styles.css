@@ -9,7 +9,7 @@
   padding: 2rem;
 }
 .intro .intro__left #intro__h1 {
-  color: #FEFEFB;
+  color: #fefefb;
   font-weight: 600;
   font-size: 3rem;
   margin: 1rem 0;
@@ -19,8 +19,8 @@
   font-weight: 400;
 }
 .intro .intro__left #intro__btn {
-  background-color: #00F482;
-  color: #FEFEFB;
+  background-color: #00f482;
+  color: #fefefb;
   width: 9rem;
   padding: 0.5rem;
   margin: 0;
@@ -29,7 +29,7 @@
   margin-top: 3rem;
 }
 .intro .intro__left #intro__btn a {
-  color: #FEFEFB;
+  color: #fefefb;
   text-decoration: none;
 }
 .intro #intro__img {
@@ -48,7 +48,7 @@
   padding: 2rem;
 }
 .intro .intro__left #intro__h1 {
-  color: #FEFEFB;
+  color: #fefefb;
   font-weight: 600;
   font-size: 3rem;
   margin: 1rem 0;
@@ -58,8 +58,8 @@
   font-weight: 400;
 }
 .intro .intro__left #intro__btn {
-  background-color: #00F482;
-  color: #FEFEFB;
+  background-color: #00f482;
+  color: #fefefb;
   width: 9rem;
   padding: 0.5rem;
   margin: 0;
@@ -68,7 +68,7 @@
   margin-top: 3rem;
 }
 .intro .intro__left #intro__btn a {
-  color: #FEFEFB;
+  color: #fefefb;
   text-decoration: none;
 }
 .intro #intro__img {
@@ -84,13 +84,13 @@
 }
 
 #premium__h2 {
-  color: #FEFEFB;
+  color: #fefefb;
   margin: 0;
 }
 
 #premium__btn {
-  background-color: #00F482;
-  color: #FEFEFB;
+  background-color: #00f482;
+  color: #fefefb;
   width: 9rem;
   padding: 0.5rem;
   margin: 0;
@@ -101,7 +101,7 @@
 }
 
 a {
-  color: #FEFEFB;
+  color: #fefefb;
   text-decoration: none;
 }
 
@@ -287,22 +287,24 @@ body {
   gap: 10em;
   padding-top: 20px;
 }
-.footer_buttons .play_button, .footer_buttons a {
-  background-color: #00B365;
-  color: #FEFEFB;
+.footer_buttons .play_button,
+.footer_buttons a {
+  background-color: #00b365;
+  color: #fefefb;
   width: 10em;
   height: 3em;
   border-radius: 20px;
-  color: #FEFEFB;
+  color: #fefefb;
   text-decoration: none;
 }
-.footer_buttons .switch_button, .footer_buttons a {
-  background-color: #00B365;
-  color: #FEFEFB;
+.footer_buttons .switch_button,
+.footer_buttons a {
+  background-color: #00b365;
+  color: #fefefb;
   width: 10em;
   height: 3em;
   border-radius: 20px;
-  color: #FEFEFB;
+  color: #fefefb;
   text-decoration: none;
 }
 
@@ -318,7 +320,8 @@ main {
   left: 40%;
 }
 
-.footer__menu, #copyright {
+.footer__menu,
+#copyright {
   display: flex;
   justify-content: center;
   margin: 0 3rem;
@@ -336,22 +339,22 @@ main {
   font-size: 14px;
 }
 #navbar__menu a {
-  color: #FEFEFB;
+  color: #fefefb;
   text-decoration: none;
 }
 #navbar__menu #navbar__menu__premium {
-  color: #00F482;
+  color: #00f482;
   font-weight: 800;
 }
 #navbar__menu #navbar__menu__signup {
-  color: #00B365;
+  color: #00b365;
 }
 
 #premium__section {
   font-size: 2rem;
   font-weight: 800;
   line-height: 60px;
-  color: #FEFEFB;
+  color: #fefefb;
   width: 90vw;
   height: 100%;
   margin: 0 auto;
@@ -372,14 +375,14 @@ main {
   color: #303030;
 }
 #premium__section #premium__h3__domboom {
-  color: #00F482;
+  color: #00f482;
 }
 #premium__section #premium__p {
   font-size: 3rem;
 }
 #premium__section #premium__btn {
-  background-color: #00F482;
-  color: #FEFEFB;
+  background-color: #00f482;
+  color: #fefefb;
   border: none;
   font-size: 1.5rem;
   font-weight: 800;
@@ -399,7 +402,7 @@ body {
   padding: 0.5rem;
 }
 body .h1Obras {
-  color: #00F482;
+  color: #00f482;
 }
 body #navbar {
   display: flex;
@@ -415,11 +418,11 @@ body #navbar #navbar__menu {
   font-size: 14px;
 }
 body #navbar #navbar__menu a {
-  color: #FEFEFB;
+  color: #fefefb;
   text-decoration: none;
 }
 body #navbar #navbar__menu a:hover {
-  color: #00F482;
+  color: #00f482;
 }
 
 /*# sourceMappingURL=styles.css.map */

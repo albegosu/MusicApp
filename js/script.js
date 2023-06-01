@@ -35,6 +35,30 @@ function preloadKeyboard(){
 
 }
 
+// const form = document.querySelector('form');
+// const usernameInput = document.getElementById('username');
+// const passwordInput = document.getElementById('password');
+
+// form.addEventListener('submit', function(event) {
+//   event.preventDefault(); 
+//   const username = usernameInput.value;
+//   const password = passwordInput.value;
+//   if (username.trim() === '' || password.trim() === '') {
+//     alert('Please enter both username and password.');
+//     return; 
+//   }
+
+//   alert(`Logged in with username: ${username}`);
+  
+//   form.reset();
+// });
+
+// const signUpLink = document.querySelector('a');
+// signUpLink.addEventListener('click', function(event) {
+//   event.preventDefault();
+//   alert('Sign up link clicked!');
+// });
+
 /*function keyPressed() {
     if (key === 'a' || key === 'A') {
       bombo.play(); // Reproduce el sonido de bombo
