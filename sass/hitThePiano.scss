@@ -1,19 +1,18 @@
 @import 'variables';
 @import 'mixings';
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 #img__piano {
     max-width: 70%;
-    margin: 0 0 4rem 0;
-}
+    margin: 4rem auto;
+}   
 
 #container__text {
-    // position: absolute;
-    // margin: auto;
-    // width: 100vw;
-    // height: 80pt;
-    // top: 0;
-    // bottom: 0;
     filter: url(#threshold) blur(0.2px);
     margin: 4rem 0 0 0;
 }
@@ -28,15 +27,16 @@
     user-select: none;
     color: $colorDarkGreen;
 }
+
 #bottom__navigation {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 70%;
 }
 
 #bottom__navigation--switch {
     display: flex;
     flex-direction: column;
-    margin: auto;
 }
 
 #bottom__navigation--switch button {
