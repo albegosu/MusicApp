@@ -1,5 +1,6 @@
 @import 'variables';
 
+
 @mixin fontFamily {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8rem;
@@ -135,4 +136,16 @@
 @mixin flxlogo {
   display: flex;
   justify-content: space-evenly;
+}
+
+@mixin foot {
+  position: absolute;
+    bottom: 1rem;
+    left: 40%;
+}
+
+@mixin reset{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
