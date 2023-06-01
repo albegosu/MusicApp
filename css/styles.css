@@ -334,6 +334,7 @@ main {
 }
 
 #bottom__navigation {
+#navbar {
   display: flex;
   justify-content: space-evenly;
 }
@@ -444,6 +445,7 @@ body {
   color: grey;
   padding: 0.5rem;
 }
+
 body .h1Obras {
   color: #00F482;
 }
