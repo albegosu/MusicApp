@@ -133,8 +133,7 @@ preloadKeyboard();
 
 
 /*let bombo, crash, hihat, redob, tom1, tom2, tom3, tom4;
-bombo = 2;
-console.log(bombo);
+
 let do1, do2, re1, re2, mi1, mi2, fa1, fa2, sol1, sol2, la1, la2, si1, si2, random;
 
 */
