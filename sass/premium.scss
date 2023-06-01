@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixings";
+@import "footer";
 
 #navbar__menu {
   @include navbar();
@@ -7,12 +8,12 @@
     color: $colorWhite;
     text-decoration: none;
   }
-  #navbar__menu__premium {
+  /*#navbar__menu__premium {
     @include navbarPremium();
   }
   #navbar__menu__signup {
     color: $colorDarkGreen;
-  }
+  }*/
 }
 #premium__section {
   @include premium-section();
