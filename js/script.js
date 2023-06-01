@@ -35,8 +35,8 @@ document.addEventListener("keydown", (event) => {
     if (note) {
        note.classList.add("active"); // Agrega una clase para resaltar visualmente la tecla presionada
         switch (key) {
-            case "a":
-            do1.play();
+                    case "a":
+                    do1.play();
                         break;
                     case "w":
                         mi2.play();
