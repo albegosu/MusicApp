@@ -312,6 +312,11 @@ main {
   align-items: center;
 }
 
+#navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .footer {
   position: absolute;
   bottom: 1rem;
