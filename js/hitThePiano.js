@@ -1,70 +1,52 @@
-const elts = {
-    text1: document.getElementById("container__text1"),
-    text2: document.getElementById("container__text2")
-};
+const words = ["let's", "play", "let's", "enjoy"],
+  colors = ["blue", "yellow", "blue", "yellow"],
+  text = document.querySelector(".text");
 
-const texts = [
-    "let's",
-    "play",
-    "the",
-    "Piano"
-];
+// Generator (iterate from 0-3)
+function* generator() {
+  let index = 0;
+  while (true) {
+    yield index++;
 
-const morphTime = 1;
-const cooldownTime = 0.25;
-let textIndex = texts.length - 1;
-let time = new Date();
-let morph = 0;
-let cooldown = cooldownTime;
-
-elts.text1.textContent = texts[textIndex % texts.length];
-elts.text2.textContent = texts[(textIndex + 1) % texts.length];
-
-function doMorph() {
-    morph -= cooldown;
-    cooldown = 0;
-    let fraction = morph / morphTime;
-    if (fraction > 1) {
-        cooldown = cooldownTime;
-        fraction = 1;
+    if (index > 3) {
+      index = 0;
     }
-    setMorph(fraction);
+  }
 }
 
-function setMorph(fraction) {
-    elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
-    elts.text2.style.opacity = `${Math.pow(fraction, 0.2) * 100}%`;
-    fraction = 1 - fraction;
-    elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
-    elts.text1.style.opacity = `${Math.pow(fraction, 0.2) * 100}%`;
-    elts.text1.textContent = texts[textIndex % texts.length];
-    elts.text2.textContent = texts[(textIndex + 1) % texts.length];
-}
-
-function doCooldown() {
-    morph = 0;
-    elts.text2.style.filter = "";
-    elts.text2.style.opacity = "100%";
-    elts.text1.style.filter = "";
-    elts.text1.style.opacity = "0%";
-}
-
-function animate() {
-    requestAnimationFrame(animate);
-
-    let newTime = new Date();
-    let shouldIncrementIndex = cooldown > 0;
-    let dt = (newTime - time) / 1000;
-    time = newTime;
-    cooldown -= dt;
-    if (cooldown <= 0) {
-        if (shouldIncrementIndex) {
-            textIndex++;
-        }
-        doMorph();
+// Printing effect
+function printChar(word) {
+  let i = 0;
+  text.innerHTML = "";
+  text.classList.add(colors[words.indexOf(word)]);
+  let id = setInterval(() => {
+    if (i >= word.length) {
+      deleteChar();
+      clearInterval(id);
     } else {
-        doCooldown();
+      text.innerHTML += word[i];
+      i++;
     }
+  }, 500);
 }
 
-animate();
+// Deleting effect
+function deleteChar() {
+  let word = text.innerHTML;
+  let i = word.length - 1;
+  let id = setInterval(() => {
+    if (i >= 0) {
+      text.innerHTML = text.innerHTML.substring(0, text.innerHTML.length - 1);
+      i--;
+    } else {
+      text.classList.remove(colors[words.indexOf(word)]);
+      printChar(words[gen.next().value]);
+      clearInterval(id);
+    }
+  }, 100);
+}
+
+// Initializing generator
+let gen = generator();
+
+printChar(words[gen.next().value]);

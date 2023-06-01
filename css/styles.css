@@ -455,31 +455,12 @@ main {
   margin: 4rem auto;
 }
 
-#container__text {
-  filter: url(#threshold) blur(0.2px);
-  margin: 4rem 0 0 0;
-}
-
-#container__text1,
-#container__text2 {
-  position: absolute;
-  width: 100%;
-  display: inline-block;
-  font-size: 6rem;
-  text-align: center;
-  user-select: none;
-  color: #00B365;
-}
-
-#bottom__navigation {
-  display: flex;
-  justify-content: space-around;
-  gap: 70%;
-}
-
 #bottom__navigation--switch {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  right: 5rem;
+  bottom: 5rem;
 }
 
 #bottom__navigation--switch button {
@@ -492,10 +473,63 @@ main {
   border-style: none;
 }
 
+#bottom__navigation--leftArrow {
+  position: absolute;
+  left: 5rem;
+  bottom: 5rem;
+}
+
 #bottom__navigation--switch img {
   max-width: 8rem;
 }
 
+h1 {
+  font-size: 68px;
+  color: #00F482;
+  margin: 3rem auto;
+}
+h1 span.text {
+  padding: 0;
+  padding-right: 4px;
+  border-right: 2px solid #747474;
+  animation: blink 0.75s infinite;
+  font-weight: 500;
+}
+h1 .blue {
+  color: #4480ff;
+}
+h1 .yellow {
+  color: rgb(247, 205, 38);
+}
+
+p.info {
+  font-size: 12px;
+  margin-top: 6rem;
+  color: #747474;
+}
+p.info a {
+  text-decoration: none;
+  color: #4480ff;
+}
+
+@keyframes blink {
+  from {
+    border: none;
+  }
+  to {
+    border-color: 2px solid #747474;
+  }
+}
+@media screen and (max-width: 670px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 32px;
+  }
+}
 .footer {
   position: absolute;
   bottom: 1rem;
