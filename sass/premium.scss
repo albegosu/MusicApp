@@ -1,20 +1,24 @@
 @import "variables";
 @import "mixings";
-@import "footer";
+
+#navbar {
+  padding: 2em 1em;
+  @include flxlogo();
+}
 
 #navbar__menu {
   @include navbar();
-  a {
-    color: $colorWhite;
-    text-decoration: none;
-  }
-  /*#navbar__menu__premium {
-    @include navbarPremium();
-  }
-  #navbar__menu__signup {
-    color: $colorDarkGreen;
-  }*/
 }
+
+#navbar__menu a {
+  color: $colorWhite;
+  text-decoration: none;
+}
+
+#navbar__menu a:hover {
+  color: $colorLightGreen;
+}
+
 #premium__section {
   @include premium-section();
   #hit-circle {
@@ -29,4 +33,29 @@
   #premium__btn {
     @include button();
   }
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.footer__menu p {
+  color: $colorWhite;
+}
+
+.footer__menu p:hover {
+  color: $colorLightGreen;
+}
+
+footer {
+  text-align: center;
+  padding: 2em 0;
+}
+
+footer .copyright {
+  margin: 0;
+  padding-top: 3em;
+  text-align: center;
 }
