@@ -54,7 +54,7 @@ body {
   color: #303030;
 }
 #premium__section #premium__h3 {
-  font-size: 3.5em;
+  font-size: 40px;
   color: #FEFEFB;
   padding-left: 3em;
   padding-bottom: 2em;
@@ -74,11 +74,12 @@ body {
   background-color: #00F482;
   color: #FEFEFB;
   border: none;
-  font-size: 1.5rem;
+  font-size: 30px;
   font-weight: 800;
   padding: 24px;
-  border-radius: 20px;
-  display: block;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   margin-bottom: 3em;
 }
@@ -111,3 +112,40 @@ footer .copyright {
 }
 
 /*# sourceMappingURL=premium.css.map */
+
+@media screen and (max-width: 1000px ){
+  #premium__section #premium__h3{
+    font-size: 25px;
+    padding-top: 30px;
+  }
+  #premium__section #premium__p{
+    font-size: 25px;
+  }
+  #premium__section #hit-circle{
+    width: 300px;
+    height: 300px;
+  }
+  #premium__section #premium__btn {
+    padding: 16px;
+    font-size: 20px;
+    
+  }
+}
+@media screen and (max-width: 375px ){
+  #premium__section #premium__h3{
+    font-size: 16px;
+    
+  }
+  #premium__section #premium__p{
+    font-size: 16px;
+  }
+  #premium__section #hit-circle{
+    width: 200px;
+    height: 200px;
+  }
+  #premium__section #premium__btn {
+    padding: 12px;
+    font-size: 15px;
+    transform: translateX(0px);
+  }
+}
