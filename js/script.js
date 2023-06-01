@@ -2,7 +2,7 @@
 let bombo, crash, hihat, redob, tom1, tom2, tom3, tom4;
 
 //Keyboard sounds
-let do1, do2, re1, re2, mi1, mi2, fa1, fa2, sol1, sol2, la1, la2, si1, si2;
+let do1, do2, re1, re2, mi1, mi2, fa1, fa2, sol1, sol2, la1, la2, si1, si2, random;
 
 //cargamos los sonidos 
 function preloadDrum(){
@@ -31,6 +31,7 @@ function preloadKeyboard(){
     la2 = loadSound('/resources/keyboardSounds/la2.ogg');
     si1 = loadSound('/resources/keyboardSounds/si.ogg');
     si2 = loadSound('/resources/keyboardSounds/si2.ogg');
+    random = loadSound('/resources/keyboardSounds/quack.mp3')
 }
 
 /*function keyPressed() {
