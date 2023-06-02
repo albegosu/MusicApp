@@ -4,15 +4,15 @@
 
 .premium {
     @include centerContent();
-    margin: 2rem 0;
+    padding: 3rem;
 }
 #premium__h2 {
     color: $colorWhite;
-    margin: 0;
+    margin: 1rem 0;
     }
 #premium__btn{
     @include hitBtn();
-    margin: 0;
+    margin: 1rem 0;
 }
 a {
     color: $colorWhite;

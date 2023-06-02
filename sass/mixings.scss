@@ -130,9 +130,17 @@
 
 @mixin dflexContent {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin: 0 3rem;
+  padding: 3rem;
 } 
+
+@mixin dflexQuerieContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
 
 @mixin flxlogo {
   display: flex;

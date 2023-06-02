@@ -1,31 +1,51 @@
 @import 'mixings';
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 .intro {
-@include dflexContent();
-padding: 3rem 0;
-.intro__left {
-    max-width: 20rem;
-    padding: 2rem;
+    @include dflexQuerieContent();
+    .intro__left {
+        max-width: 20rem;
+        padding: 2rem 0;
+    }
     #intro__h1{
-    color: $colorWhite;
-    font-weight: 600;
-    font-size: 3rem;
-    margin: 1rem 0;
+        color: $colorWhite;
+        font-weight: 600;
+        font-size: 3rem;
+        margin: 1rem 0;
     }
     #intro__p {
-    font-size: 0.8rem;
-    font-weight: 400;
+        font-size: 0.8rem;
+        font-weight: 400;
     }
     #intro__btn {
-    @include hitBtn();
+        @include hitBtn();
         a {
             color: $colorWhite;
             text-decoration: none;
         }  
     }
+    #intro__img {
+        max-width: 100%;
+        min-width: 20rem;
+    }
 }
-#intro__img {
-    flex: 1 60%;
-    max-width: 30rem;
+
+.line {
+    @include dflexContent();
+    gap: 2rem;
+    padding: 0;
 }
+
+@media (min-width: 768px) {
+    .intro {
+        @include dflexContent();
+        #intro__img {
+            max-width: 40rem;
+        }
+    }
+
 }
