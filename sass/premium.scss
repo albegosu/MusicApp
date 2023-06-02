@@ -1,89 +1,31 @@
 @import "variables";
 @import "mixings";
-*{
-  @include reset()
-}
-
-body{
-  background-color: $colorbgdarkblue;
-  @include fontFamily();
-}
-#navbar {
-  padding: 2em 1em;
-  @include flxlogo();
-}
 
 #navbar__menu {
   @include navbar();
+  a {
+    color: $colorWhite;
+    text-decoration: none;
+  }
+  #navbar__menu__premium {
+    @include navbarPremium();
+  }
+  #navbar__menu__signup {
+    color: $colorDarkGreen;
+  }
 }
-
-#navbar__menu a {
-  color: $colorWhite;
-  text-decoration: none;
-}
-
-#navbar__menu a:hover {
-  color: $colorLightGreen;
-}
-
 #premium__section {
-  
+  @include premium-section();
   #hit-circle {
     @include hitcircle();
   }
-  #premium__h3 {
-    font-size: 3.5em;
-    color: $colorWhite;
-    padding-left:3em;
-    padding-bottom: 2em
-
-
-  }
-  #premium__h3 span{
+  #premium__h3__domboom {
     @include DOMBOOM();
-    font-size: 1em;
-    padding: 2em 2em 0 0;
   }
   #premium__p {
-    color: $colorWhite;
     font-size: 3rem;
-    padding-left: 3em;
-    padding-bottom: 1.5em;
   }
   #premium__btn {
     @include button();
-    margin-bottom: 3em;
-    
   }
 }
-
-.footer__menu {
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-}
-
-.footer__menu p {
-  padding-bottom: 2em;
-  color: $colorWhite;
-}
-
-.footer__menu p:hover {
-  color: $colorLightGreen;
-}
-
-footer {
-  text-align: center;
-  padding-top: 2em ;
-  margin-bottom: 0;
-}
-
-footer .copyright {
-  margin-bottom: 0;
-  padding-top: 1em;
-  text-align: center;
-  
-}
-
-
-
