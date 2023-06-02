@@ -215,6 +215,20 @@ footer .copyright {
 }
 
 @media screen and (max-width: 500px){
+  #navbar{
+    padding: 0;
+  }
+  #navbar__menu{
+    gap: 1em;
+  }
+  #navbar__logo img {
+    width: 150px;
+    
+  }
+  #hamburger img{
+    width: 30px;
+    height: 30px;
+  }
   #navbar__menu.active {
     display: flex;
     position: absolute;
@@ -236,10 +250,6 @@ footer .copyright {
     width: 150px;
   }
     
-  #hamburger img{
-    width: 20px;
-    height: 20px;
-  }
   #premium__section #premium__h3{
     font-size: 16px;
     

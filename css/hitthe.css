@@ -14,6 +14,21 @@ body {
   padding: 0.5rem;
 }
 
+#hamburger {
+  position: relative;
+  top: 0;
+  right: 0;
+  display: none;
+  cursor: pointer;
+  
+}
+
+.hamburger img {
+  width: 25px;
+  height: 25px;
+}
+
+
 #navbar {
   padding: 2em 1em;
   display: flex;
@@ -107,6 +122,37 @@ footer .copyright {
 }
 
 @media screen and (max-width: 1000px) {
+  
+  #navbar__menu {
+    display: none;
+    visibility: hidden;
+    gap: 2em;
+  }
+  #navbar__logo {
+    position: absolute;
+    left: 1em; 
+  }
+  #hamburger {
+    display: block;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
+  #navbar__menu.active {
+    display: flex;
+    position: absolute;
+    top: 5em;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    visibility: visible;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #131313;
+    width: 8em;  
+  }
   .imgs__hitThe {
     flex-wrap: wrap;
   }
@@ -114,7 +160,16 @@ footer .copyright {
     flex-basis: 50%;
   }
 }
+
+
+
+
 @media screen and (max-width: 768px) {
+  #hamburger img{
+    width: 35px;
+    height: 35px;
+  }
+  
   .main__hitThe {
     font-size: 2.5em;
   }
@@ -125,7 +180,22 @@ footer .copyright {
     font-size: 2em;
   }
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 500px) {
+  #navbar{
+    padding: 0;
+  }
+  #navbar__menu{
+    gap: 1em;
+  }
+  #navbar__logo img {
+    width: 150px;
+    
+  }
+  #hamburger img{
+    width: 30px;
+    height: 30px;
+  }
   .main__hitThe {
     font-size: 2em;
   }
@@ -135,6 +205,23 @@ footer .copyright {
   .coming_soon {
     font-size: 1.5em;
   }
+  #navbar__menu.active {
+    display: flex;
+    position: absolute;
+    top: 5em;
+    flex-direction: column;
+    align-items: center;
+    visibility: visible;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    background-color: #131313;
+    width: 6em;    
+    
+  }
 }
+
+
 
 /*# sourceMappingURL=hitthe.css.map */
