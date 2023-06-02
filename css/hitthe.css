@@ -84,10 +84,47 @@ body {
   color: #FEFEFB;
 }
 
+
 .drum_img:hover, .piano_img:hover {
-  border: 1px solid #00F482;
+  animation: borderMovement 0.4s infinite alternate;
   transform: scale(1.1);
 }
+
+@keyframes borderMovement {
+  0% {
+    box-shadow: 0px 0px 10px 2px #00F482;
+  }
+  50% {
+    box-shadow: 0px 0px 20px 4px #00F482;
+  }
+  100% {
+    box-shadow: 0px 0px 10px 2px #00F482;
+  }
+}
+
+@keyframes musicEffect {
+  0% {
+    transform: scale(1);
+    color: white;
+  }
+  50% {
+    transform: scale(1.5);
+    color:#00B365
+;
+  }
+  100% {
+    transform: scale(1);
+    color: white;
+  }
+}
+
+.musicEffect {
+  animation: musicEffect 1s infinite;
+}
+
+
+
+
 
 .coming_soon {
   padding: 3em 0;
