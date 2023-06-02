@@ -82,7 +82,7 @@ body {
 #premium__section #premium__h3 {
   font-size: 40px;
   color: #FEFEFB;
-  padding-left: 3em;
+  padding-left: 2.7em;
   padding-bottom: 2em;
 }
 #premium__section #premium__h3 span {
@@ -204,10 +204,7 @@ footer .copyright {
   #premium__section #premium__p{
     font-size: 25px;
   }
-  #premium__section #hit-circle{
-    width: 250px;
-    height: 250px;
-  }
+  
   #premium__section #premium__btn {
     padding: 16px;
     font-size: 20px;
@@ -242,6 +239,7 @@ footer .copyright {
     padding-bottom: 1em;
     background-color: #131313;
     width: 6em;  
+    
   }
 }
 
@@ -250,20 +248,10 @@ footer .copyright {
     width: 150px;
   }
     
-  #premium__section #premium__h3{
-    font-size: 16px;
-    
-  }
-  #premium__section #premium__p{
-    font-size: 16px;
-  }
+  
   #premium__section #hit-circle{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
-  #premium__section #premium__btn {
-    padding: 12px;
-    font-size: 15px;
-    
-  }
+  
 }
