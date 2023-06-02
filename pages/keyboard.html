@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/feature/keyboard.css">
-    <title>Prueba keyboard</title>
+    <link rel="stylesheet" href="keyboard.css">
+    <title>The last Keyngboard</title>
 </head>
+
 <body>
     <main>
-        <div id="keyboard">
-            <div id="teclas">
-                <div note="do1" class="whiteKey">A</div>
-                <div note="mi2" class="blackKey">W</div>
-                <div note="re1" class="whiteKey">S</div>
-                <div note="fa2" class="blackKey">E</div>
-                <div note="mi1" class="whiteKey">D</div>
-                <div note="sol2" class="blackKey">R</div> 
-                <div note="fa1" class="whiteKey">F</div> 
-                <div note="la2" class="blackKey">T</div> 
-                <div note="sol1" class="whiteKey">G</div> 
-                <div note="si2" class="blackKey">Y</div> 
-                <div note="la1" class="whiteKey">H</div>
-                <div note="do1-2" class="blackKey">U</div> 
-                <div note="si1" class="whiteKey">J</div>
-                <div note="re1-2" class="blackKey">I</div> 
-                <div note="do2" class="whiteKey">K</div>
-                <div note="random" class="blackKey">O</div> 
-                <div note="re2" class="whiteKey">L</div>
+        <div class="containerKeyboard">
+        <div class="keyZone">
+            <div class="group g1">
+                <div class="key whiteKey" key="c2">A</div>
+                <div class="key blackKey" key="C2">W</div>
+                <div class="key whiteKey" key="d2">S</div>
+                <div class="key blackKey" key="D2">E</div>
+                <div class="key whiteKey" key="e2">DD</div>
+            </div>
+            <div class="group g2">
+                <div class="key whiteKey" key="f2">F</div>
+                <div class="key blackKey" key="F2">T</div>
+                <div class="key whiteKey" key="g2">G</div>
+                <div class="key blackKey" key="G2">Y</div>
+                <div class="key whiteKey" key="a2">H</div>
+                <div class="key blackKey" key="A2">U</div>
+                <div class="key whiteKey" key="b2">J</div>
+            </div>
+            <div class="group g1">
+                <div class="key whiteKey" key="c3">K</div>
+                <div class="key blackKey" key="C3">O</div>
+                <div class="key whiteKey" key="d3">L</div>
+                <div class="key blackKey" key="D3">P</div>
+                <div class="key whiteKey" key="e3">M</div>
             </div>
         </div>
+        </div>
+        
     </main>
-    <script src="/js/script.js"></script>
+        <script src="scriptKey.js"></script>
 </body>
-</html>
 
+</html>
