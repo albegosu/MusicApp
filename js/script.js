@@ -49,23 +49,23 @@ keys.forEach(function(key){
 
 const loadAudios = () => {
 const audioFiles = {
-    "c2": "audios/do.mp3",
-    "d2": "audios/re.mp3",
-    "e2": "audios/mi.mp3",
-    "f2": "audios/fa.mp3",
-    "g2": "audios/sol.mp3",
-    "a2": "audios/la.mp3",
-    "b2": "audios/si.mp3",
-    "C2": "audios/do1.mp3",
-    "D2": "audios/re2.mp3",
-    "F2": "audios/mi2.mp3",
-    "G2": "audios/fa2.mp3",
-    "A2": "audios/sol2.mp3",
-    "C3": "audios/la2.mp3",
-    "D3": "audios/si2.mp3",
-    "c3": "audios/do3.mp3",
-    "d3": "audios/re3.mp3",
-    "e3": "audios/mi3.mp3"
+    "c2": "/resources/keyboardAudios/do.mp3",
+    "d2": "/resources/keyboardAudios/re.mp3",
+    "e2": "/resources/keyboardAudios/mi.mp3",
+    "f2": "/resources/keyboardAudios/fa.mp3",
+    "g2": "/resources/keyboardAudios/sol.mp3",
+    "a2": "/resources/keyboardAudios/la.mp3",
+    "b2": "/resources/keyboardAudios/si.mp3",
+    "C2": "/resources/keyboardAudios/do1.mp3",
+    "D2": "/resources/keyboardAudios/re2.mp3",
+    "F2": "/resources/keyboardAudios/mi2.mp3",
+    "G2": "/resources/keyboardAudios/fa2.mp3",
+    "A2": "/resources/keyboardAudios/sol2.mp3",
+    "C3": "/resources/keyboardAudios/la2.mp3",
+    "D3": "/resources/keyboardAudios/si2.mp3",
+    "c3": "/resources/keyboardAudios/do3.mp3",
+    "d3": "/resources/keyboardAudios/re3.mp3",
+    "e3": "/resources/keyboardAudios/mi3.mp3"
 };
 
 for (const key in audioFiles) {
