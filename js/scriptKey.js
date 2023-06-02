@@ -72,8 +72,7 @@ for (const key in audioFiles) {
     const audio = new Audio(audioFiles[key]);
     audios[key] = audio;
     }
-  }
-};
+  };
 
 const playSound = (key) => {
     let sound = getAudio(key);
@@ -104,5 +103,5 @@ const getKeyElement = (key) => {
         }
     }
 };
-loadAudios();
+loadAudio();
 
