@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixings";
 
-// ----------- login -----------
+/* Styles for larger screens */
 /* Styles for computers and large tablets */
 @media (min-width: 1024px) {
   .container {
@@ -26,28 +26,21 @@
   }
 }
 
-#navbar__menu #login {
-  color: $colorLightGreen;
-}
-#str {
-  color: $colorDarkGreen;
-  font-size: large;
-}
 #errorContainer {
   color: red;
 }
-.lg__container {
+.register__container {
   max-width: 100%;
-  margin: 0 auto;
-  margin-top: 3rem;
-  padding: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 15px;
   background-color: $colorBgLogin;
   border: 1px solid $colorWhite;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.lg__container h2 {
+.register__container h2 {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -81,7 +74,3 @@
   border-radius: 3px;
   cursor: pointer;
 }
-a {
-  color: blue;
-}
-// --------end of login-------
