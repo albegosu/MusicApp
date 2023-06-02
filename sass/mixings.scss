@@ -1,5 +1,6 @@
 @import 'variables';
 
+
 @mixin fontFamily {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8rem;
@@ -142,4 +143,16 @@
   color: $colorLightGreen;
   font-size: 5rem;
   font-weight: 800;
+}
+
+@mixin foot {
+  position: absolute;
+    bottom: 1rem;
+    left: 40%;
+}
+
+@mixin reset{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
