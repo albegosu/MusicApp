@@ -2,16 +2,16 @@ const drumPads = document.querySelectorAll('.drum-pad');
 const audios = {};
 
 const drumSounds = {
-  "7": "/resources/drumSounds/crash_left.mp3",
-  "9": "/resources/drumSounds/crash_up_right.mp3",
-  "4": "/resources/drumSounds/tom_up_left.mp3",
-  "6": "/resources/drumSounds/tom_up_right.mp3",
-  "5": "/resources/drumSounds/crash_down_right.mp3",
-  "1": "/resources/drumSounds/tom_down_left.mp3",
-  "2": "/resources/drumSounds/tom_down_center.mp3",
-  "3": "/resources/drumSounds/tom_down_right.mp3",
-  "8": "/resources/drumSounds/snare_drum.mp3",
-  "0": "/resources/drumSounds/bass_drum.mp3"
+  "7": "/resources/drumSounds/crash.wav",
+  "9": "/resources/drumSounds/crash.wav",
+  "4": "/resources/drumSounds/tom1.wav",
+  "6": "/resources/drumSounds/tom2.wav",
+  "5": "/resources/drumSounds/tom3.wav",
+  "1": "/resources/drumSounds/tom4.wav",
+  "2": "/resources/drumSounds/redob.wav",
+  "3": "/resources/drumSounds/redob.wav",
+  "8": "/resources/drumSounds/bombo.wav",
+  "0": "/resources/drumSounds/hit-hat.wav3"
 };
 
 drumPads.forEach(function(drumPad) {
