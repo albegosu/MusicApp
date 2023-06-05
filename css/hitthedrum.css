@@ -16,6 +16,7 @@ body {
   width: 70%;
 }
 
+
 .crash_left {
   position: absolute;
   width: 270px;
@@ -167,7 +168,7 @@ body {
 }
 
 .bass_drum:hover {
-  cursor: pointer;
+  cursor: url('/resources/images/Drum_parts/drum_stick_.png' auto;
 }
 
 .footer_buttons {
