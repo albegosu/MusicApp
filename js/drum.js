@@ -1,59 +1,125 @@
-const drumPads = document.querySelectorAll('.drum-pad');
-const audios = {};
+const drumElements = document.querySelectorAll(".img_container > div");
 
-const drumSounds = {
-  "7": "/resources/drumSounds/crash.wav",
-  "9": "/resources/drumSounds/crash.wav",
-  "4": "/resources/drumSounds/tom1.wav",
-  "6": "/resources/drumSounds/tom2.wav",
-  "5": "/resources/drumSounds/tom3.wav",
-  "1": "/resources/drumSounds/tom4.wav",
-  "2": "/resources/drumSounds/redob.wav",
-  "3": "/resources/drumSounds/redob.wav",
-  "8": "/resources/drumSounds/bombo.wav",
-  "0": "/resources/drumSounds/hit-hat.wav3"
+const audioFiles = {
+  "crash_up_left": "/resources/drumSounds/crash.wav",
+  "crash_up_right": "/resources/drumSounds/crash.wav",
+  "tom_up_left": "/resources/drumSounds/tom4.wav",
+  "tom_up_right": "/resources/drumSounds/tom4.wav",
+  "hithat": "/resources/drumSounds/hit-hat.wav",
+  "tom_down_left": "/resources/drumSounds/tom1.wav",
+  "tom_down_center": "/resources/drumSounds/tom2.wav",
+  "tom_down_right": "/resources/drumSounds/tom3.wav",
+  "snare_drum": "/resources/drumSounds/redoblante.wav",
+  "bass_drum": "/resources/drumSounds/bombo.wav"
 };
 
-drumPads.forEach(function(drumPad) {
-  drumPad.addEventListener("mousedown", function() {
-    const key = drumPad.getAttribute("data-key");
-    playSound(key);
-  });
+const audioElements = Object.fromEntries(
+  Object.entries(audioFiles).map(([key, file]) => [key, new Audio(file)])
+);
 
-  drumPad.addEventListener("mouseup", function() {
-    const key = drumPad.getAttribute("data-key");
-    resetPadEffects(key);
+const getDrumKeyFromEvent = key => {
+  const keyMap = {
+    "a": "tom_up_left",
+    "s": "tom_up_right",
+    "d": "tom_down_left",
+    "f": "tom_down_center",
+    "g": "tom_down_right",
+    "q": "snare_drum",
+    "w": "crash_up_left",
+    "e": "bass_drum",
+    "r": "crash_up_right",
+    "t": "hithat"
+  };
+  return keyMap[key] || null;
+};
+
+const makeSound = drumKey => {
+  const audio = audioElements[drumKey];
+  if (audio) {
+    audio.currentTime = 0;
+    audio.play();
+  }
+};
+
+drumElements.forEach(drumElement => {
+  drumElement.addEventListener("click", () => {
+    const drumKey = drumElement.classList[1];
+    makeSound(drumKey);
+    drumElement.classList.add("clicked");
+    setTimeout(() => {
+      drumElement.classList.remove("clicked");
+    }, 100);
   });
 });
 
-for (const key in drumSounds) {
-  if (drumSounds.hasOwnProperty(key)) {
-    const audio = new Audio(drumSounds[key]);
-    audios[key] = audio;
+document.addEventListener("keydown", event => {
+  const drumKey = getDrumKeyFromEvent(event.key);
+  if (drumKey) {
+    makeSound(drumKey);
+    const drumElement = document.querySelector("." + drumKey);
+    drumElement.classList.add("pressed");
+    setTimeout(() => {
+      drumElement.classList.remove("pressed");
+    }, 100);
   }
-}
+});
 
-const playSound = (key) => {
-  let sound = getAudio(key);
-  sound.currentTime = 0;
-  sound.play();
-  applyPadEffects(key);
-};
+document.addEventListener("DOMContentLoaded", function () {
+  var drumElements = document.querySelectorAll(".img_container > div");
 
-const getAudio = (key) => {
-  return audios[key];
-};
+  function handleAnimation(element) {
+    if (element.classList.contains("shake-top")) {
+      element.classList.remove("shake-top");
+      void element.offsetWidth;
+      element.classList.add("shake-top");
+    } else {
+      element.classList.remove("shake-vertical");
+      void element.offsetWidth;
+      element.classList.add("shake-vertical");
+    }
+  }
 
-const applyPadEffects = (key) => {
-  let padElement = getPadElement(key);
-  padElement.classList.add("active");
-};
+  function handleClickOrKeyPress(element) {
+    handleAnimation(element);
+  }
 
-const resetPadEffects = (key) => {
-  let padElement = getPadElement(key);
-  padElement.classList.remove("active");
-};
+  drumElements.forEach(function (element) {
+    element.addEventListener("click", function () {
+      handleClickOrKeyPress(this);
+    });
 
-const getPadElement = (key) => {
-  return document.querySelector(`.drum-pad[data-key="${key}"]`);
-};
+    element.addEventListener("keypress", function (event) {
+      if (event.key === "Enter") {
+        handleClickOrKeyPress(this);
+      }
+    });
+  });
+
+  document.addEventListener("keydown", function (event) {
+    var key = event.key.toLowerCase();
+    var drumKey = getDrumKeyFromEvent(key);
+    if (drumKey) {
+      var drumElement = document.querySelector("." + drumKey);
+      handleClickOrKeyPress(drumElement);
+    }
+  });
+
+  const getDrumKeyFromEvent = key => {
+    const keyMap = {
+      "a": "tom_up_left",
+      "s": "tom_up_right",
+      "d": "tom_down_left",
+      "f": "tom_down_center",
+      "g": "tom_down_right",
+      "q": "snare_drum",
+      "w": "crash_up_left",
+      "e": "bass_drum",
+      "r": "crash_up_right",
+      "t": "hithat",
+      "u": "crash_up_left",
+      "i": "crash_up_right",
+      "o": "hithat"
+    };
+    return keyMap[key] || null;
+  };
+});

@@ -106,12 +106,85 @@ body {
 }
 
 .bass_drum {
-  width: 130px;
-  height: 130px;
-  top: 410px;
-  left: 692px;
+  width: 110px;
+  height: 110px;
+  top: 420px;
+  left: 704px;
   background-color: yellow;
-  /*transform: rotate(10deg);*/
+}
+
+@keyframes shake-top {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 0;
+  }
+
+  10% {
+    transform: rotate(2deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+
+  80% {
+    transform: rotate(-2deg);
+  }
+
+  90% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes shake-vertical {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+
+  80% {
+    transform: translateY(6.4px);
+  }
+
+  90% {
+    transform: translateY(-6.4px);
+  }
+}
+
+.drum {
+  cursor: pointer;
+}
+
+.shake-top {
+  animation: shake-top 0.2s;
+}
+
+.shake-vertical {
+  animation: shake-vertical 0.2s;
 }
 
 .footer_buttons {
