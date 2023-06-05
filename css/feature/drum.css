@@ -36,7 +36,7 @@
   height: 114px;
   top: 82px;
   left: 272px;
-  background-color: black;
+  background-color: #c7cdd8;
   transform: rotate(10deg);
 }
 
@@ -45,7 +45,7 @@
   height: 46px;
   top: 20px;
   left: 864px;
-  background-color: violet;
+  background-color: #aeb7c4;
   transform: rotate(164deg);
 }
 
@@ -54,7 +54,7 @@
   height: 62px;
   top: 116px;
   left: 537px;
-  background-color: green;
+  background-color: #f34525;
   transform: rotate(4deg);
 }
 
@@ -63,7 +63,7 @@
   height: 64px;
   top: 120px;
   left: 732px;
-  background-color: blue;
+  background-color: #e63c2c;
 }
 
 .hithat {
@@ -71,7 +71,7 @@
   height: 87px;
   top: 134px;
   left: 964px;
-  background-color: aqua;
+  background-color: #6e717f;
   transform: rotate(165deg);
 }
 
@@ -80,7 +80,7 @@
   height: 50px;
   top: 224px;
   left: 474px;
-  background-color: aquamarine;
+  background-color: #8495a3;
   transform: rotate(1.8deg);
 }
 
@@ -89,7 +89,7 @@
   height: 50px;
   top: 235px;
   left: 655px;
-  background-color: red;
+  background-color: #9eabba;
   transform: rotate(1deg);
 }
 
@@ -98,7 +98,7 @@
   height: 50px;
   top: 234px;
   left: 844px;
-  background-color: purple;
+  background-color: #828f9d;
   transform: rotate(-4deg);
 }
 
@@ -107,7 +107,7 @@
   height: 56px;
   top: 322px;
   left: 290px;
-  background-color: orange;
+  background-color: #748593;
   transform: rotate(-2.5deg);
 }
 
@@ -116,7 +116,7 @@
   height: 110px;
   top: 420px;
   left: 704px;
-  background-color: yellow;
+  background-color: #010100;
 }
 
 @keyframes shake-top {
