@@ -5,19 +5,15 @@ body {
 #navbar {
   padding: 50px 200px;
 }
+.logo {
+  width: 300px;
+}
 
 .img_container {
   position: relative;
-  padding: 0 0 0 300px;
+  padding: 0 0 0 180px;
+  left: 150px;
   width: 70%;
-}
-
-.pad-container {
-  position: absolute;
-  top: 170px;
-  left: 130px;
-  width: 80%;
-  height: 80%;
 }
 
 .crash_left {
@@ -198,5 +194,117 @@ body {
   color: #FEFEFB;
   text-decoration: none;
 }
-
+.footer_buttons .arrow_back a{
+  background-color:rgb(4, 0, 66); ;
+}
+.arrow_back_img{
+  width: 100px;
+}
+  
 /*# sourceMappingURL=hitthedrum.css.map */
+@media screen and (max-width: 1600px) {
+  .img_container{
+    padding-right: 200px;
+    transform: translateX(-100px);
+  }
+  .logo {
+    width: 400px;
+  }
+  .footer_buttons{
+    padding-right: 300px;
+    padding-left: 300px;
+    transform: translateX(100px);
+    gap: 300px;
+  } 
+  
+}
+
+@media screen and (max-width: 1400px) {
+  .img_container{
+    transform: translateX(-200px);
+    padding-right: 100px;
+    margin-right: 100px;
+  }
+  .logo {
+    width: 400px;
+  }
+  .footer_buttons{
+    padding-right: 300px;
+    padding-left: 200px; 
+    gap: 200px;
+  } 
+}
+
+
+@media screen and (max-width: 1200px) {
+   .img_container{
+    transform: translateX(-300px);
+    padding-right: 100px;
+    margin-right: 100px;
+  }
+  
+  .logo {
+    width: 400px;
+  }
+  .footer_buttons{
+    padding-right: 300px;
+    padding-left: 200px;
+    gap: 200px;
+  } 
+  
+}
+
+
+@media screen and (max-width: 1000px )  {
+
+  .img_container{
+    padding-right: 200px;
+    margin-right: 200px; 
+  }
+  .logo {
+    width: 500px;
+  } 
+  .footer_buttons{
+    padding-right: 300px;
+    padding-left: 100px;
+    transform: translateX(250px);
+    gap: 200px;
+  } 
+  
+  
+}
+
+
+@media screen and (max-width: 768px){
+
+  
+  .img_container{
+    transform: translateX(-300px);
+    padding-right: 200px;
+    margin-right: 200px;
+  }
+  
+  .footer_buttons{
+    padding-right: 300px;
+    padding-left: 400px;
+    transform: translateX(200px);
+    gap: 200px;
+  } 
+  
+}
+
+@media screen and (max-width: 300px){
+
+  
+  .img_container{
+    width: max-content;
+  }
+  
+  .footer_buttons{
+    padding-right: 300px;
+    padding-left: 300px;
+    transform: translateX(200px);
+  } 
+  
+}
+

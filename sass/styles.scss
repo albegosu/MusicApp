@@ -1,29 +1,30 @@
-@import 'variables';
-@import 'mixings';
-@import 'intro';
-@import 'divPremium';
-@import 'hitthedrum';
-@import 'hitThe';
-@import 'footer';
+@import "variables";
+@import "mixings";
+@import "intro";
+@import "btn";
+@import "hitthedrum";
+@import "hitThe";
+@import 'hitThePiano';
+@import "premium";
 
 body {
-    background: rgb(4,0,66);
-    background: radial-gradient(circle, rgba(4,0,66,1) 0%, rgba(2,0,36,1) 100%);   
-    @include fontFamily(); 
-    .h1Obras {
-      color: $colorLightGreen;
-    }
-    #navbar {
-      @include flxlogo();
-      #navbar__menu {
-        @include navbar();
-        a{
+  background: rgb(4, 0, 66);
+  background: radial-gradient(circle,rgba(4, 0, 66, 1) 0%,rgba(2, 0, 36, 1) 100%);
+  @include fontFamily();
+  .h1Obras {
+    color: $colorLightGreen;
+  }
+  #navbar {
+    @include flxlogo();
+    #navbar__menu {
+      @include navbar();
+      a {
         color: $colorWhite;
         text-decoration: none;
-        }
-        a:hover {
-          color: $colorLightGreen;
-        }
+      }
+      a:hover {
+        color: $colorLightGreen;
       }
     }
+  }
 }
