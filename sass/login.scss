@@ -1,87 +1,133 @@
-@import "variables";
-@import "mixings";
 
-// ----------- login -----------
-/* Styles for computers and large tablets */
-@media (min-width: 1024px) {
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-  }
+
+@import 'mixings';
+@import 'variables';
+
+//Main
+main {
+    display: flex;
+    justify-content: center;
 }
 
-/* Styles for tablets and small laptops */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
-  }
-}
+//Intro section
+.intro {
 
-/* Styles for phones and small tablets */
-@media (max-width: 767px) {
-  .container {
-    max-width: 100%;
-    padding: 0 20px;
-  }
+    @include dflexQuerieContent();
+    .intro__left {
+        @include dflexContent();
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 20rem;
+        padding: 2rem 0;
+    }
+    #intro__h1{
+        color: $colorWhite;
+        font-weight: 600;
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+    #intro__p {
+        font-size: 0.8rem;
+        font-weight: 400;
+    }  
+    #intro__img {
+        max-width: 100%;
+        min-width: 20rem;
+    }
 }
-
+//Intro queries
+@media (min-width: 768px) {
+    .intro {
+        @include dflexContent();
+        gap: 8rem;
+        #intro__img {
+            max-width: 40rem;
+        }
+    }
+  }
 #navbar__menu #login {
   color: $colorLightGreen;
 }
-#str {
-  color: $colorDarkGreen;
-  font-size: large;
-}
-#errorContainer {
-  color: red;
-}
-.lg__container {
-  max-width: 100%;
-  margin: 0 auto;
-  margin-top: 3rem;
-  padding: 20px;
-  background-color: $colorBgLogin;
-  border: 1px solid $colorWhite;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+
+
+  .intro__left {
+    max-width: 20rem;
+    padding: 2rem;
+    #intro__h1 {
+      color: $colorWhite;
+      font-weight: 600;
+      font-size: 3rem;
+      margin: 1rem 0;
+    }
+    #intro__p {
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+    #intro__btn {
+      @include btn_green();
+      a {
+        color: $colorWhite;
+        text-decoration: none;
+      }
+    }
+  }
+  #intro__img {
+    flex: 1 60%;
+    max-width: 30rem;
+  }
+
+
+   
+    .intro__left {
+        @include dflexContent();
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 20rem;
+        padding: 2rem 0;
+    }
+    #intro__h1{
+        color: $colorWhite;
+        font-weight: 600;
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+    #intro__p {
+        font-size: 0.8rem;
+        font-weight: 400;
+    }  
+    #intro__img {
+        max-width: 100%;
+        min-width: 20rem;
+    }
+
+//Intro queries
+@media (min-width: 768px) {
+    .intro {
+        @include dflexContent();
+        gap: 8rem;
+        #intro__img {
+            max-width: 40rem;
+        }
+    }
+
 }
 
-.lg__container h2 {
-  text-align: center;
-  margin-bottom: 20px;
+//Intro division
+.line {
+    @include dflexContent();
+    gap: 2rem;
+    padding: 0;
 }
-
-.form-group {
-  margin-bottom: 20px;
+//Premium section
+.premium {
+    @include centerContent();
+    padding: 3rem;
 }
-
-.form-group label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  margin-left: 30px;
-}
-
-.form-group input {
-  width: 65%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  margin-left: 30px;
-}
-
-.form-group button {
-  width: 50%;
-  padding: 8px;
-  margin-left: 25%;
-  background-color: #4caf50;
-  color: #ffffff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-a {
-  color: blue;
-}
-// --------end of login-------
+#premium__h2 {
+    color: $colorWhite;
+    margin: 1rem 0;
+    }
