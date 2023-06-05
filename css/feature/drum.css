@@ -1,0 +1,131 @@
+body {
+  background-color: rgb(4, 0, 66);
+}
+
+#navbar {
+  padding: 50px 200px;
+}
+
+.logo {
+  width: 300px;
+}
+
+.img_container {
+  position: relative;
+  padding-left: 180px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.drum,
+.crash,
+.hithat {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.crash_up_left {
+  width: 246px;
+  height: 114px;
+  top: 82px;
+  left: 272px;
+  background-color: black;
+  transform: rotate(10deg);
+}
+
+.crash_up_right {
+  width: 220px;
+  height: 46px;
+  top: 20px;
+  left: 864px;
+  background-color: violet;
+  transform: rotate(164deg);
+}
+
+.tom_up_left {
+  width: 172px;
+  height: 62px;
+  top: 116px;
+  left: 537px;
+  background-color: green;
+  transform: rotate(4deg);
+}
+
+.tom_up_right {
+  width: 178px;
+  height: 64px;
+  top: 120px;
+  left: 732px;
+  background-color: blue;
+}
+
+.hithat {
+  width: 236px;
+  height: 87px;
+  top: 134px;
+  left: 964px;
+  background-color: aqua;
+  transform: rotate(165deg);
+}
+
+.tom_down_left {
+  width: 168px;
+  height: 50px;
+  top: 224px;
+  left: 474px;
+  background-color: aquamarine;
+  transform: rotate(1.8deg);
+}
+
+.tom_down_center {
+  width: 164px;
+  height: 50px;
+  top: 235px;
+  left: 655px;
+  background-color: red;
+  transform: rotate(1deg);
+}
+
+.tom_down_right {
+  width: 168px;
+  height: 50px;
+  top: 234px;
+  left: 844px;
+  background-color: purple;
+  transform: rotate(-4deg);
+}
+
+.snare_drum {
+  width: 222px;
+  height: 56px;
+  top: 322px;
+  left: 290px;
+  background-color: orange;
+  transform: rotate(-2.5deg);
+}
+
+.bass_drum {
+  width: 130px;
+  height: 130px;
+  top: 410px;
+  left: 692px;
+  background-color: yellow;
+  /*transform: rotate(10deg);*/
+}
+
+.footer_buttons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10em;
+  padding-top: 20px;
+}
+
+.footer_buttons .play_button,
+.footer_buttons .switch_button {
+  background-color: #00B365;
+  color: #FEFEFB;
+  width: 10em;
+  height: 3em;
+  border-radius: 20px;
+}
