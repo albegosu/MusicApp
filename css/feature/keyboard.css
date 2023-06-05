@@ -183,20 +183,21 @@ main {
   
   .intro .intro__left #intro__h1 {
     color: #fefefb;
-  
+  }
   
   .intro #intro__h1 {
     color: #FEFEFB;
-  }
     font-weight: 600;
     font-size: 3rem;
     margin: 1rem 0;
   }
+    
+  
   .intro #intro__p {
     font-size: 0.8rem;
     font-weight: 400;
   }
-}
+
   .intro .intro__left #intro__btn {
     background-color: #00f482;
     color: #fefefb;
