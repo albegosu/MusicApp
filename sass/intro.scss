@@ -1,6 +1,19 @@
+<<<<<<< HEAD
 @import "mixings";
+=======
+@import 'mixings';
+@import 'variables';
+>>>>>>> 9913b7e1d56ef3b13e0901baff25a56a9fc14f56
 
+//Main
+main {
+    display: flex;
+    justify-content: center;
+}
+
+//Intro section
 .intro {
+<<<<<<< HEAD
   @include dflexContent();
   padding: 3rem 0;
   .intro__left {
@@ -29,3 +42,55 @@
     max-width: 30rem;
   }
 }
+=======
+    @include dflexQuerieContent();
+    .intro__left {
+        @include dflexContent();
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 20rem;
+        padding: 2rem 0;
+    }
+    #intro__h1{
+        color: $colorWhite;
+        font-weight: 600;
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+    #intro__p {
+        font-size: 0.8rem;
+        font-weight: 400;
+    }  
+    #intro__img {
+        max-width: 100%;
+        min-width: 20rem;
+    }
+}
+//Intro queries
+@media (min-width: 768px) {
+    .intro {
+        @include dflexContent();
+        gap: 8rem;
+        #intro__img {
+            max-width: 40rem;
+        }
+    }
+
+}
+//Intro division
+.line {
+    @include dflexContent();
+    gap: 2rem;
+    padding: 0;
+}
+//Premium section
+.premium {
+    @include centerContent();
+    padding: 3rem;
+}
+#premium__h2 {
+    color: $colorWhite;
+    margin: 1rem 0;
+    }
+>>>>>>> 9913b7e1d56ef3b13e0901baff25a56a9fc14f56

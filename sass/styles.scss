@@ -1,21 +1,17 @@
 @import "variables";
 @import "mixings";
 @import "intro";
-@import "divPremium";
+@import "btn";
 @import "hitthedrum";
 @import "hitThe";
-@import "footer";
+@import 'hitThePiano';
 @import "premium";
 @import "login";
 @import "register";
 
 body {
   background: rgb(4, 0, 66);
-  background: radial-gradient(
-    circle,
-    rgba(4, 0, 66, 1) 0%,
-    rgba(2, 0, 36, 1) 100%
-  );
+  background: radial-gradient(circle,rgba(4, 0, 66, 1) 0%,rgba(2, 0, 36, 1) 100%);
   @include fontFamily();
   .h1Obras {
     color: $colorLightGreen;

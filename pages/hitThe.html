@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLAY DOMBOOM</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/hitthe.css">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,10 +15,14 @@
 </head>
     <body>
         <header>
+            <div id="hamburger">
+                <img src="/resources/images/menu_hamburgesa.svg.svg" alt="">
+              </div>
+
             <nav id="navbar">
                 <div id="navbar__logo">
                     <a href="../public/index.html">
-                        <img src="/images/logo DOMBOOM.png" alt="Logo">
+                        <img src="/resources/images/logo DOMBOOM.png" alt="Logo">
                     </a>
                 </div>
                 <ul id="navbar__menu">
@@ -31,26 +35,34 @@
             </nav>
         </header>
         <main>
-            <h1 id ="main__hitThe">Choose the instrument</h1>
-            <div id ="imgs__hitThe">
-                <figure>
-                    <img src = "/images/electronicdrum.png" alt="picture of a electric drum" href="#">
-                        <figcaption class="imgs__hitThe__instruments">Play <a href='#'>ELECTRONIC DRUM</a></figcaption>
-                </figure>
-                <figure>
-                    <img src = "/images/teclado_sinfondo.png" alt="picture of an electric piano" href="#">
-                        <figcaption class="imgs__hitThe__instruments">Play <a href='#'>KEYBOARD</a></figcaption>
-                </figure>
+            
+            <h1 class="main__hitThe">Choose the instrument</h1>
+
+            <div class="imgs__hitThe">
+
+                    <div class="drum_container"><a href="/pages/hitthedrum.html"><img class="drum_img" src="/resources/images/electronicdrum.png" alt="picture of a electric drum"></a>
+                        <p>Play ELECTRONIC DRUM</p>
+                    </div>
+
+                    <div class="piano_container"><a href="/pages/hitThePiano.html"><img class="piano_img" src = "/resources/images/teclado_sinfondo.png" alt="picture of an electric piano"></a>
+                        <p>Play KEYBOARD</p>
+                    </div>
+                       
             </div>
-            <p>Coming soon: more instruments, more fun!</p>
+
+            <p class="coming_soon">Coming soon: more instruments, more fun!</p>
+        
         </main>
-        <footer class="footer">
+        <footer>
+            
             <div class="footer__menu">
                 <p>Privacy Policy</p>
                 <p>Terms of Use</p>
                 <p>Legal</p>
             </div>
-            <p id="copyright">&copy; 2023 Music Tutorial. All rights reserved.</p>
+            <p class="copyright">&copy; 2023 Music Tutorial. All rights reserved.</p>
         </footer>
+        <script src="/js/hamburguer.js"></script>
+        <script src="/js/hitthe.js"></script>
     </body>
 </html>
