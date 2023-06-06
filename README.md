@@ -59,7 +59,7 @@ El equipo de desarrollo deberá proponer al cliente el nuevo instrumento y la in
    - Clases CSS reutilizables.
    - Código modular tanto CSS/SASS como JS.
    
-##########################################################################################################
+#####################################################################################
 
 * LANDING PAGE:
 
@@ -78,7 +78,7 @@ El equipo de desarrollo deberá proponer al cliente el nuevo instrumento y la in
 
 ![keyboard](https://github.com/albegosu/music-app/assets/128363248/0cd31aff-0541-42a2-b2a6-1380ae39428b)
 
-#########################################################################################################
+#######################################################################################
 
 # USO DE LOS INSTRUMENTOS:
 
