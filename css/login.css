@@ -1,0 +1,149 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+.intro .intro__left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 20rem;
+  padding: 2rem 0;
+}
+.intro #intro__h1 {
+  color: #fefefb;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.intro #intro__p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.intro #intro__img {
+  max-width: 100%;
+  min-width: 20rem;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem;
+    gap: 8rem;
+  }
+  .intro #intro__img {
+    max-width: 40rem;
+  }
+}
+#navbar__menu #login {
+  color: #00f482;
+}
+
+.intro__left {
+  max-width: 20rem;
+  padding: 2rem;
+}
+.intro__left #intro__h1 {
+  color: #fefefb;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.intro__left #intro__p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.intro__left #intro__btn {
+  background-color: #00b365;
+  color: #fefefb;
+  width: 10em;
+  height: 3em;
+  border-radius: 20px;
+  color: #fefefb;
+  text-decoration: none;
+}
+.intro__left #intro__btn a {
+  color: #fefefb;
+  text-decoration: none;
+}
+
+#intro__img {
+  flex: 1 60%;
+  max-width: 30rem;
+}
+
+.intro__left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 20rem;
+  padding: 2rem 0;
+}
+
+#intro__h1 {
+  color: #fefefb;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+#intro__p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+#intro__img {
+  max-width: 100%;
+  min-width: 20rem;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem;
+    gap: 8rem;
+  }
+  .intro #intro__img {
+    max-width: 40rem;
+  }
+}
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem;
+  gap: 2rem;
+  padding: 0;
+}
+
+.premium {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+#premium__h2 {
+  color: #fefefb;
+  margin: 1rem 0;
+}
+
+/*# sourceMappingURL=login.css.map */
