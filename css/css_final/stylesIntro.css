@@ -282,11 +282,11 @@ path.two {
 }
 
 .footer__menu p {
-    color: #FEFEFB;
+    color: var(--colorWhite);
 }
 
 .footer__menu p:hover {
-    color: #00F482;
+    color: var(--colorLightGreen);
 }
 
 footer {
