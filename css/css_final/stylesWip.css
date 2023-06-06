@@ -101,6 +101,11 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    color: #00F482;
+}
+
+main p {
+    color: grey;
 }
 
 main img {
