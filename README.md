@@ -49,9 +49,7 @@ El equipo de desarrollo deberá proponer al cliente el nuevo instrumento y la in
 
     * Personalización de la batería
 
-Técnicos
-
-​
+# Técnicos
 
    - Front-end: Tecnologías HTML, CSS, JS (vanilla)
    - Git, responsive design,
