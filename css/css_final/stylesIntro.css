@@ -67,18 +67,51 @@
     #navbar__menu.active {
         display: flex;
         position: absolute;
-        top: 5em;
+        top: 4em;
         right: 0;
         flex-direction: column;
-        align-items: center;
         visibility: visible;
         border: 1px solid black;
         border-radius: 10px;
         padding-top: 1em;
         padding-bottom: 1em;
         background-color: #131313;
-        width: 8em;  
+        width: 6em;  
     }
+    @media screen and (max-width: 768px ){
+        #navbar__logo img {
+          width: 200px;
+        }
+        #hamburger img{
+          width: 30px;
+          height: 30px;
+        }
+        #navbar{
+            padding: 0;
+          }
+          #navbar__menu.active {
+            top: 3em;
+            right: 0;
+            width: 6em;  
+        }
+         
+        
+      }
+      
+      @media screen and (max-width: 500px){
+        
+        #navbar__menu{
+          gap: 1em;
+        }
+        #navbar__logo img {
+          width: 150px;
+        }
+        #navbar__menu.active {
+          width: 5em;   
+        }
+      }
+      
+      
 }
 
 /* BODY */
@@ -94,10 +127,12 @@ body {
 
 .intro {
     display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 3rem;
+    justify-content: center;
+    gap: 5em;
 }
+
 
 .intro__left {
     display: flex;
@@ -122,24 +157,30 @@ body {
     font-size: 0.8rem;
     font-weight: 400;
 }
-
 #intro__img {
-    max-width: 100%;
-    min-width: 20rem;
+    flex: 1 70%;
+    max-width: 30rem;
+   /* max-width: 60%;*/
+    
 }
 
+
+
 /* Intro queries */
-@media (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .intro {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         padding: 3rem;
-        gap: 8rem;
+        gap: 2rem;
     }
     #intro__img {
-        max-width: 40rem;
+        max-width: 25em;
     }
+}
+@media (min-width: 768px){
+
 }
 
 #navbar__menu #login {
@@ -161,10 +202,8 @@ body {
     text-decoration: none;
 }
 
-#intro__img {
-    flex: 1 60%;
-    max-width: 30rem;
-}
+
+
 
 /* Intro division */
 .line {
@@ -276,7 +315,16 @@ path.two {
 
 /* FOOTER */
 
+
+.footer {
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+ 
 .footer__menu {
+
     display: flex;
     justify-content: center;
     gap: 2em;
