@@ -80,7 +80,13 @@ Técnicos
 
 ![keyboard](https://github.com/albegosu/music-app/assets/128363248/0cd31aff-0541-42a2-b2a6-1380ae39428b)
 
+#########################################################################################################
 
+# USO DE LOS INSTRUMENTOS:
+
+- Tanto la batería como el teclado, funcionan tanto mediante click del ratón, como mediante
+teclas asignadas en el teclado. Las teclas correspondientes se muestran en pantalla sobre cada una de las teclas
+o las diversas partes de la batería.
 
 
 
