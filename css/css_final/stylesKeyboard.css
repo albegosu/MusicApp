@@ -1,40 +1,62 @@
-body {
-    background: rgb(4, 0, 66);
-    background: radial-gradient(circle, rgb(4, 0, 66) 0%, rgb(2, 0, 36) 100%);
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: grey;
-    padding: 0.5rem;
-  }
+:root {
+  --colorBlack: #020021;
+  --colorBlue: #070078;
+  --colorDarkGreen: #00b365;
+  --colorLightGreen: #00f482;
+  --colorWhite: #fefefb;
+  --colorBgLogin: #ccf6d1;
+  --colorbgdarkblue: rgb(4, 0, 66);
+}
 
-  #navbar {
-    padding: 2em 1em;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  #navbar__menu {
-    display: flex;
-    position: relative;
-    top: 0;
-    right: 0;
-    justify-content: flex-end;
-    align-items: flex-start;
-    width: 30%;
-    gap: 2em;
-    list-style: none;
-    font-size: 14px;
-  }
-  
-  #navbar__menu a {
-    color: #FEFEFB;
-    text-decoration: none;
-  }
-  
-  #navbar__menu a:hover {
-    color: #00F482;
-  }
+/* NAVBAR */
+#hamburger {
+  position: relative;
+  top: 0;
+  right: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger img {
+  width: 25px;
+  height: 25px;
+}
+
+#navbar {
+  padding: 2em 1em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#navbar__menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 60%;
+  gap: 3em;
+  list-style: none;
+  font-size: 14px;
+}
+
+#navbar__menu a {
+  color: var(--colorWhite);
+  text-decoration: none;
+}
+
+#navbar__menu a:hover {
+  color: var(--colorLightGreen);
+}
+
+/* BODY */
+body {
+  background: rgb(4, 0, 66);
+  background: radial-gradient(circle,rgba(4, 0, 66, 1) 0%,rgba(2, 0, 36, 1) 100%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: grey;
+  padding: 0.5rem;
+}
   
 .containerKeyboard{   
     
@@ -307,7 +329,6 @@ p.info {
   color: #747474;}
 
   a{
-    font-weight: bold;
     text-decoration: none;
     color: white;
   }
