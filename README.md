@@ -59,7 +59,7 @@ El equipo de desarrollo deberá proponer al cliente el nuevo instrumento y la in
    - Código Limpio.
    - Marcado HTML semántico
    - Clases CSS reutilizables.
-   - Código modular tanto CSS/SASS como JS.
+   - Código modular tanto CSS como JS.
    
 #####################################################################################
 
