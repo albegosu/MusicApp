@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/css_final/stylesKeyboard.css">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
-    <title>Hit The Drum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <title>PLAY DOMBOOM - PIANO</title>
+    <link rel="icon" href="/resources/images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
     <header>
+
+        <div id="hamburger">
+            <img src="/resources/images/menu_hamburgesa.svg.svg" alt="">
+          </div>
         <nav id="navbar">
             <div id="navbar__logo">
                 <a href="../public/index.html">
@@ -18,19 +24,46 @@
             </div>
             <ul id="navbar__menu">
                 <li><a href="../pages/premium.html" class="navbar__menu__item">Premium</a></li>
-                <li><a href="#" class="navbar__menu__item">Help</a></li>
-                <li><a href="#" class="navbar__menu__item">Download</a></li>
-                <li><a href="#" class="navbar__menu__item">Sign Up</a></li>
+                <li><a href="../pages/wip.html" class="navbar__menu__item">Help</a></li>
+                <li><a href="../pages/wip.html" class="navbar__menu__item">Download</a></li>
+                <li><a href="../pages/register.html" class="navbar__menu__item">Sign Up</a></li>
                 <li><a href="../pages/login.html" class="navbar__menu__item">Log In</a></li>
             </ul>
         </nav>
     </header>
     <main>
-      <h1><span class="text blue">Let's</span> Piano</h1>
+      <h1 id="titulinchi"><span class="text blue">Let's</span> Electronic keyboard</h1>
       <!-- PIANO -->
-        <img src="../resources/images/Piano.png" alt="Play piano image" id="img__piano">  
+      <div class="containerKeyboard">
+        <div class="keyZone">
+            <div class="group g1">
+                <div class="key whiteKey" key="c2">A</div>
+                <div class="key blackKey" key="C2">W</div>
+                <div class="key whiteKey" key="d2">S</div>
+                <div class="key blackKey" key="D2">E</div>
+                <div class="key whiteKey" key="e2">D</div>
+            </div>
+            <div class="group g2">
+                <div class="key whiteKey" key="f2">F</div>
+                <div class="key blackKey" key="F2">T</div>
+                <div class="key whiteKey" key="g2">G</div>
+                <div class="key blackKey" key="G2">Y</div>
+                <div class="key whiteKey" key="a2">H</div>
+                <div class="key blackKey" key="A2">U</div>
+                <div class="key whiteKey" key="b2">J</div>
+            </div>
+            <div class="group g1">
+                <div class="key whiteKey" key="c3">K</div>
+                <div class="key blackKey" key="C3">O</div>
+                <div class="key whiteKey" key="d3">L</div>
+                <div class="key blackKey" key="D3">P</div>
+                <div class="key whiteKey" key="e3">M</div>
+            </div>
+        </div>
+        </div> 
         
         <section id="bottom__navigation">
+            <div class="nav_down">
             <a href="hitThe.html" id="bottom__navigation--leftArrow">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-left" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00F482" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -43,6 +76,7 @@
                 </button>
                 <img src="../resources/images/electronicdrum.png" alt="miniatura piano">
             </div>
+        </div>
         </section>
     </main>
     <footer class="footer">
@@ -54,5 +88,7 @@
         <p id="copyright">&copy; 2023 Music Tutorial. All rights reserved.</p>
     </footer>
     <script src="../js/hitThePiano.js"></script>
+    <script src="../js/hamburguer.js"></script>
 </body>
 </html>
+

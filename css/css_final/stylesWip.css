@@ -1,0 +1,134 @@
+:root {
+    --colorBlack: #020021;
+    --colorBlue: #070078;
+    --colorDarkGreen: #00b365;
+    --colorLightGreen: #00f482;
+    --colorWhite: #fefefb;
+    --colorBgLogin: #ccf6d1;
+    --colorbgdarkblue: rgb(4, 0, 66);
+}
+
+/* NAVBAR */
+#hamburger {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger img {
+    width: 25px;
+    height: 25px;
+}
+
+#navbar {
+    padding: 2em 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navbar__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 60%;
+    gap: 3em;
+    list-style: none;
+    font-size: 14px;
+}
+
+#navbar__menu a {
+    color: var(--colorWhite);
+    text-decoration: none;
+}
+
+#navbar__menu a:hover {
+    color: var(--colorLightGreen);
+}
+
+#navbar__menu #login {
+    color: var(--colorLightGreen);
+}  
+
+@media screen and (max-width: 1000px) {
+
+    #navbar__menu {
+        display: none;
+        visibility: hidden;
+        gap: 2em;
+    }
+    #navbar__logo {
+        position: absolute;
+        left: 1em; 
+    }
+    #hamburger {
+        display: block;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+    #navbar__menu.active {
+        display: flex;
+        position: absolute;
+        top: 5em;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        visibility: visible;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color: #131313;
+        width: 8em;  
+    }
+}
+
+/* BODY */
+body {
+    background: rgb(4, 0, 66);
+    background: radial-gradient(circle,rgba(4, 0, 66, 1) 0%,rgba(2, 0, 36, 1) 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: grey;
+    padding: 0.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: #00F482;
+    margin: 5rem;
+}
+
+main p {
+    color: grey;
+}
+
+main img {
+    width: 20rem;
+}
+
+/* FOOTER */
+
+.footer {
+    position: fixed;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer__menu {
+    display: flex;
+    color: white;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .footer__menu p:hover {
+    color: #00F482;
+  }
