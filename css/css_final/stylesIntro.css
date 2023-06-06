@@ -181,6 +181,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2rem 0;
 }
 
 #premium__h2 {
@@ -278,7 +279,7 @@ path.two {
 
 .footer {
     position: fixed;
-    bottom: 1rem;
+    bottom: 0;
     width: 100%;
     text-align: center;
   }
@@ -288,6 +289,7 @@ path.two {
     color: white;
     gap: 1rem;
     justify-content: center;
+    margin: 1rem 0;
   }
   
   .footer__menu p:hover {
