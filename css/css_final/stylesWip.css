@@ -102,6 +102,7 @@ main {
     align-items: center;
     gap: 1rem;
     color: #00F482;
+    margin: 5rem;
 }
 
 main p {
