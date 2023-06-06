@@ -1,4 +1,4 @@
-/*body {
+body {
   background-color: rgb(4, 0, 66);
 }
 
@@ -8,7 +8,7 @@
 
 .logo {
   width: 300px;
-}*/
+}
 
 .img_container {
   position: relative;
@@ -193,7 +193,7 @@
   animation: shake-vertical 0.2s;
 }
 
-/*.footer_buttons {
+.footer_buttons {
   display: flex;
   justify-content: space-evenly;
   gap: 10em;
@@ -207,4 +207,4 @@
   width: 10em;
   height: 3em;
   border-radius: 20px;
-}*/
+}
