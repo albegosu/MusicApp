@@ -15,10 +15,6 @@ body::before {
   border-bottom: 2px solid black;
   content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import \"intro\";\a   \2502          ^^^^^^^\a   \2575 \a   sass/styles.scss 3:9  root stylesheet";
 }
-<<<<<<< HEAD
-=======
-
-
 
 /* Styles for computers and large tablets */
 @media (min-width: 1024px) {
@@ -184,4 +180,3 @@ body #navbar #navbar__menu a {
 body #navbar #navbar__menu a:hover {
   color: #00f482;
 }
->>>>>>> cc688ef27195b206d27a5d3ae14fd9b081ea0f2a
