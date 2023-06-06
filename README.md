@@ -24,7 +24,9 @@ El equipo de desarrollo deberá proponer al cliente el nuevo instrumento y la in
 
 # Funcionales
 
-++Mínimos: ++ Interfaz de usuario:
+++Mínimos: ++ 
+
+- Interfaz de usuario:
 
     Entregar una web page funcional (misma estructura aunque se cambie el instrumento)
     Debe ser responsive con 2 puntos de quiebre
