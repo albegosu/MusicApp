@@ -45,3 +45,8 @@ function deleteChar() {
     }
   }, 100);
 }
+
+// Initializing generator
+let gen = generator();
+
+printChar(words[gen.next().value]);
