@@ -48,7 +48,6 @@ El equipo de desarrollo deberá proponer al cliente el nuevo instrumento y la in
 ++Extras:++
 
     * Personalización de la batería
-    * Uso de SASS
 
 Técnicos
 
@@ -66,13 +65,18 @@ Técnicos
 
 * LANDING PAGE:
 
-![page landing](https://github.com/albegosu/music-app/assets/128363248/5778c265-5a76-4daf-8898-851d9e31b425)
+
+![landing page](https://github.com/albegosu/music-app/assets/128363248/10305b43-de06-4a7a-afbe-82aed2a6f921)
+
 
 * DRUM PAGE:
 
+
 ![drum page](https://github.com/albegosu/music-app/assets/128363248/658ef14e-dd19-4c97-8b4a-e861a1ff52fd)
 
+
 * KEYBOARD PAGE:
+
 
 ![keyboard](https://github.com/albegosu/music-app/assets/128363248/0cd31aff-0541-42a2-b2a6-1380ae39428b)
 
