@@ -1,0 +1,133 @@
+
+
+@import 'mixings';
+@import 'variables';
+
+//Main
+main {
+    display: flex;
+    justify-content: center;
+}
+
+//Intro section
+.intro {
+
+    @include dflexQuerieContent();
+    .intro__left {
+        @include dflexContent();
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 20rem;
+        padding: 2rem 0;
+    }
+    #intro__h1{
+        color: $colorWhite;
+        font-weight: 600;
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+    #intro__p {
+        font-size: 0.8rem;
+        font-weight: 400;
+    }  
+    #intro__img {
+        max-width: 100%;
+        min-width: 20rem;
+    }
+}
+//Intro queries
+@media (min-width: 768px) {
+    .intro {
+        @include dflexContent();
+        gap: 8rem;
+        #intro__img {
+            max-width: 40rem;
+        }
+    }
+  }
+#navbar__menu #login {
+  color: $colorLightGreen;
+}
+
+
+
+
+  .intro__left {
+    max-width: 20rem;
+    padding: 2rem;
+    #intro__h1 {
+      color: $colorWhite;
+      font-weight: 600;
+      font-size: 3rem;
+      margin: 1rem 0;
+    }
+    #intro__p {
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+    #intro__btn {
+      @include btn_green();
+      a {
+        color: $colorWhite;
+        text-decoration: none;
+      }
+    }
+  }
+  #intro__img {
+    flex: 1 60%;
+    max-width: 30rem;
+  }
+
+
+   
+    .intro__left {
+        @include dflexContent();
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 20rem;
+        padding: 2rem 0;
+    }
+    #intro__h1{
+        color: $colorWhite;
+        font-weight: 600;
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+    #intro__p {
+        font-size: 0.8rem;
+        font-weight: 400;
+    }  
+    #intro__img {
+        max-width: 100%;
+        min-width: 20rem;
+    }
+
+//Intro queries
+@media (min-width: 768px) {
+    .intro {
+        @include dflexContent();
+        gap: 8rem;
+        #intro__img {
+            max-width: 40rem;
+        }
+    }
+
+}
+
+//Intro division
+.line {
+    @include dflexContent();
+    gap: 2rem;
+    padding: 0;
+}
+//Premium section
+.premium {
+    @include centerContent();
+    padding: 3rem;
+}
+#premium__h2 {
+    color: $colorWhite;
+    margin: 1rem 0;
+    }
