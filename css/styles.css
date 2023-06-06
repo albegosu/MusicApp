@@ -2,6 +2,7 @@ main {
   display: flex;
   justify-content: center;
 }
+<<<<<<< HEAD
 
 .intro {
   display: flex;
@@ -716,6 +717,8 @@ footer {
   margin-bottom: 0;
 }
 
+=======
+>>>>>>> c2193c0a9675ba96ac9130f4748566e0dc82b0fd
 
 /* Styles for computers and large tablets */
 @media (min-width: 1024px) {
