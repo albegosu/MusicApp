@@ -108,26 +108,21 @@ main img {
 }
 
 /* FOOTER */
-.footer__menu {
+
+.footer {
+    position: fixed;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer__menu {
     display: flex;
+    color: white;
+    gap: 1rem;
     justify-content: center;
-    gap: 2em;
-}
-
-.footer__menu p {
-    color: var(--colorWhite);
-}
-
-.footer__menu p:hover {
-    color: var(--colorLightGreen);
-}
-
-footer {
-    text-align: center;
-}
-
-footer .copyright {
-    margin: 0;
-    padding-top: 3em;
-    text-align: center;
-}
+  }
+  
+  .footer__menu p:hover {
+    color: #00F482;
+  }
