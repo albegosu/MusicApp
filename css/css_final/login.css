@@ -16,7 +16,6 @@
   padding: 20px;
   background-color: #ccf6d1;
   border: 1px solid #fefefb;
-  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .lg__container h2 {
@@ -31,7 +30,6 @@
 .form-group input {
   padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 2rem;
 }
 
 .form-group button {
@@ -41,7 +39,6 @@
   background-color: #4caf50;
   color: #ffffff;
   border: none;
-  border-radius: 2rem;
   cursor: pointer;
 }
 
